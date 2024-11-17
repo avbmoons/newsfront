@@ -1,0 +1,54 @@
+@use "sass:math";
+
+@import "../vars/vars.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: $site-width;
+    min-height: $min-site-height;
+    @include flex-vertical();
+    justify-content: space-between;
+    .top {
+        margin: 0 auto;
+        width: $site-width;
+        height: auto;
+        @include flex-vertical();
+        justify-content: flex-start;
+        flex-grow: 1;
+        header {
+        position: fixed;
+        top: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: $header-height;
+        @include flex-vertical();
+        background-color: $color-white;
+        border: 1px solid red;
+        }
+        main {
+        margin: 0 auto;
+        width: 100%;
+        min-height: $min-site-height;
+        //min-height: 700px;
+        @include flex-vertical();
+        border: 1px solid green;
+        }
+    }
+    footer {
+        margin: 0 auto;
+        width: 100%;
+        height: $footer-height;
+        @include flex-vertical();
+        background-color: $color-main-dark;
+        border: 1px solid red;
+    }
+}
