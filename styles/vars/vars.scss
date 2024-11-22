@@ -1,52 +1,53 @@
-@use "sass:math";
+@use 'sass:math';
 
 $site-width: 100%;
 $block-width: 80vw;
 $form-width: 50vw;
 
-$min-site-height:100vh;
+$min-site-height: 100vh;
 $header-height: 20vh;
 $footer-height: 10vh;
-$min-main-height: 80 vh;
+$min-main-height: 80vh;
+$page-title-height: 10vh;
 
-$color-main: #abbee6;   //rgb(171, 190, 230)
-$color-main-dark: #370c80;  //rgb(55, 12, 128)
+$color-main: #abbee6; //rgb(171, 190, 230)
+$color-main-dark: #370c80; //rgb(55, 12, 128)
 $color-main-light: #656dc4; //rgb(101, 109, 196)
 $color-accent: #eb5a84; //rgb(235, 90, 132)
-$color-accent-dark: #c340a1;    //rgb(195, 64, 161)
-$color-accent-light: #cba6eb;   //rgb(203, 166, 235)
+$color-accent-dark: #c340a1; //rgb(195, 64, 161)
+$color-accent-light: #cba6eb; //rgb(203, 166, 235)
 
-$color-white: #fdfcf4;  //rgb(253, 252, 244)
+$color-white: #fdfcf4; //rgb(253, 252, 244)
 $color-grey-light: #e9e7e0; //rgb(233, 231, 224)
-$color-grey: #cac9c2;   //rgb(202, 201, 194)
-$color-grey-dark: #92918d;  //rgb(146, 145, 141)
-$color-black: #181818;  //rgb(24, 24, 24)
-$color-sun: #fff9d7;    //rgb(255, 249, 215)
+$color-grey: #cac9c2; //rgb(202, 201, 194)
+$color-grey-dark: #92918d; //rgb(146, 145, 141)
+$color-black: #181818; //rgb(24, 24, 24)
+$color-sun: #fff9d7; //rgb(255, 249, 215)
 
-$color-basic-white: #ffffff;    //rgb(255, 255, 255)
-$color-basic-black: #000000;    //rgb(0, 0, 0)
+$color-basic-white: #ffffff; //rgb(255, 255, 255)
+$color-basic-black: #000000; //rgb(0, 0, 0)
 
 @font-face {
-    font-family: Roboto;
-    src: url(../../assets/font/Roboto.ttf);
+  font-family: Roboto;
+  src: url(../../assets/font/Roboto.ttf);
 }
 
 @mixin flex-vertical {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
-@mixin flex-horozontal {
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
+@mixin flex-horizontal {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 @mixin text-font($font-size, $font-weight, $line-height, $letter-spacing) {
-    font-size: $font-size;
-    font-weight: $font-weight;
-    line-height: $line-height;
-    letter-spacing: $letter-spacing;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
 }
