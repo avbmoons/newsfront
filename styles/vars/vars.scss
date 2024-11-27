@@ -3,11 +3,20 @@
 $site-width: 100%;
 $block-width: 80vw;
 $form-width: 50vw;
+$admin-sidebar-width: 20vw;
+$admin-table-width: 80vw; // 100vw - ($admin-sidebar-width); // 70vw;
+$admin-block-width: 90vw;
+$admn-sidebar-marginl: 23%;
+$admin-table-marginr: 7%;
 
 $min-site-height: 100vh;
 $header-height: 20vh;
+$admin-header-height: 10vh;
+$admin-header-block-height: 60%;
+$admin-footer-height: 6vh;
 $footer-height: 10vh;
-$min-main-height: 80vh;
+$min-main-height: 100vh - $header-height; // 80vh;
+$admin-min-main-height: 100vh - ($admin-header-height); // 90vh
 $page-title-height: 10vh;
 
 $color-main: #abbee6; //rgb(171, 190, 230)
@@ -26,6 +35,13 @@ $color-sun: #fff9d7; //rgb(255, 249, 215)
 
 $color-basic-white: #ffffff; //rgb(255, 255, 255)
 $color-basic-black: #000000; //rgb(0, 0, 0)
+
+$admin-color-main: #2641af; //rgb(38, 65, 175)
+$admin-color-main-light: #276db0; //rgb(39, 109, 175)
+$admin-color-main-dark: #1b1357; //rgb(27, 19, 87)
+$admin-color-accent: #6423b0; //rgb(101, 35, 176)
+$admin-color-accent-dark: #6171b0; //rgb(97, 113, 176)
+$admin-color-accent-light: #2799b0; //rgb(39, 153, 176)
 
 @font-face {
   font-family: Roboto;
