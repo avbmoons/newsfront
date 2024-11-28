@@ -35,19 +35,19 @@ body {
       .header-block {
         margin: 0 auto;
         width: 100%; // $admin-block-width;
-        height:100%;  // $admin-header-block-height;
+        height: 100%; // $admin-header-block-height;
         @include flex-horizontal();
         justify-content: space-between;
         .header-logo-box {
           margin: 0 auto;
-          width:20vw; // auto; // $admin-sidebar-width; // auto;
-          height:100%;  // $admin-header-block-height;// 100%;
+          width: 20vw; // auto; // $admin-sidebar-width; // auto;
+          height: 100%; // $admin-header-block-height;// 100%;
           @include flex-vertical();
           //border: 1px solid yellow;
           .header-logo {
             margin: 0 auto;
             width: auto;
-            height: 60%;
+            height: 70%;
             @include flex-horizontal();
             //border: 1px solid yellowgreen;
           }
@@ -65,12 +65,12 @@ body {
             @include flex-horizontal();
             justify-content: flex-start;
             .menu-item-box {
-              margin-right: 0.7vw;  // 10px;
+              margin-right: 0.7vw; // 10px;
               @include flex-vertical();
               .menu-item {
                 text-decoration: none;
                 //@include text-font(2vh, 300, 2vh, 0);
-                @include text-font(20px, 300, 20px, 0);
+                @include text-font(18px, 300, 18px, 0);
                 color: $color-white;
               }
               .menu-item:hover {
@@ -101,7 +101,7 @@ body {
               @include flex-vertical();
               p {
                 //@include text-font(1.5vh, 300, 1.5vh, 0);
-                @include text-font(16px, 300, 16px, 0);
+                @include text-font(14px, 300, 14px, 0);
                 color: $color-white;
               }
             }
@@ -110,7 +110,7 @@ body {
               max-width: 50%;
               padding: 1vh 2.4vw; // 0 2vw;
               //@include text-font(2vh, 300, 2vh, 0);
-              @include text-font(20px, 300, 20px, 0);
+              @include text-font(18px, 300, 18px, 0);
               color: $color-white;
               background: none;
               border: 1px solid $color-white;
@@ -142,12 +142,71 @@ body {
         justify-content: space-between;
         .sidebar {
           margin: 0 auto;
-          width: 20vw;  // $admin-sidebar-width;
-          height: inherit;
+          width: 20vw; // $admin-sidebar-width;
+          height: 100%; // inherit;
           @include flex-vertical();
           justify-content: flex-start;
           background-color: $color-grey-light;
           //border: 1px solid red;
+          .sidebar-head {
+            margin: 0 auto;
+            width: 100%;
+            height: 80px;
+            @include flex-vertical();
+            //border: 1px solid green;
+            .service-time {
+              margin: 20px auto;
+              //margin-right: 2vw;
+              @include flex-vertical();
+              z-index: 999;
+              p {
+                //@include text-font(1.5vh, 300, 1.5vh, 0);
+                @include text-font(14px, 300, 14px, 0);
+                color: $admin-color-main-dark;
+              }
+            }
+          }
+          .sidebar-menu-block {
+            margin: 0 auto;
+            margin-left: $admn-sidebar-marginl;
+            width: $admin-sidebar-menu-width;
+            height: auto;
+            overflow-y: auto;
+            @include flex-vertical();
+            justify-content: flex-start;
+            .sidebar-menu-box {
+              margin: 0 auto;
+              margin-bottom: 20px;
+              width: 100%;
+              height: fit-content;
+              @include flex-horizontal();
+              justify-content: flex-start;
+              .menu-icon {
+                width: 20px;
+                height: 20px;
+              }
+              .bth-menu-item {
+                margin: 0 auto;
+                margin-left: 0;
+                padding: 0 20px;
+                background: none;
+                border: none;
+                //border: 1px solid blue;
+                outline: none;
+                //font-family: RobotoCondensed;
+                text-transform: uppercase;
+                @include text-font(16px, 700, 16px, 0);
+                color: $admin-color-main-dark;
+                cursor: pointer;
+              }
+            }
+            .sidebar-menu-box:hover .bth-menu-item {
+              color: $admin-color-accent-light;
+            }
+            .sidebar-menu-box:hover .menu-icon path {
+              stroke: $admin-color-accent-light;
+            }
+          }
         }
         .admin-content {
           margin: 0 auto;
@@ -187,7 +246,7 @@ body {
             }
             .services-block {
               margin: 0 auto;
-              width:60%;  // 50vw;  // 49vw;  // 50vw;
+              width: 60%; // 50vw;  // 49vw;  // 50vw;
               height: 100%;
               @include flex-vertical();
               //border: 1px solid blue;
@@ -200,7 +259,7 @@ body {
                 //border: 1px solid orange;
                 .search-block {
                   margin: 0 auto;
-                  width: 34vw;  //35vw; // 70%;
+                  width: 34vw; //35vw; // 70%;
                   height: 100%;
                   @include flex-vertical();
                   //border: 1px solid violet;
@@ -239,7 +298,7 @@ body {
                 }
                 .add-block {
                   margin: 0 auto;
-                  width: 15vw;  // 30%;
+                  width: 15vw; // 30%;
                   height: 100%;
                   @include flex-vertical();
                   //border: 1px solid brown;
@@ -249,16 +308,7 @@ body {
                     height: inherit;
                     @include flex-horizontal();
                     justify-content: flex-end;
-                    // .btn-add {
-                    //   background: none;
-                    //   border: none;
-                    //   border-radius: 3px;
-                    //   cursor: pointer;
-                    // }
-                    // .btn-add:hover {
-                    //   background-color: $admin-color-accent-light;
-                    // }
-                    .btn-add {                      
+                    .btn-add {
                       background: none;
                       border: none;
                       border-radius: 3px;
@@ -267,7 +317,7 @@ body {
                       //border: 1px solid green;
                       .img-add:hover path {
                         fill: $admin-color-accent-light;
-                      }                      
+                      }
                     }
 
                     .lable-add {
@@ -276,10 +326,16 @@ body {
                       padding-left: 1vw;
                       @include flex-vertical();
                       //@include text-font(2vh, 300, 2vh, 0);
-                      @include text-font(16px, 300, 16px, 0);
+                      @include text-font(14px, 300, 14px, 0);
                       color: $admin-color-main-dark;
                       //border: 1px solid green;
                     }
+                  }
+                  .add-box:hover .btn-add .img-add path {
+                    fill: $admin-color-accent-light;
+                  }
+                  .add-box:hover .lable-add {
+                    color: $admin-color-accent-light;
                   }
                 }
               }
@@ -296,7 +352,7 @@ body {
               margin: 0 auto;
               margin-left: 2vw;
               margin-right: 5vw;
-              width: 91.25%;  // 100%;
+              width: 91.25%; // 100%;
               height: auto;
               border-collapse: collapse;
               border: 1px solid $color-grey;
@@ -326,14 +382,38 @@ body {
                   td {
                     padding: 10px 0 10px 10px;
                     text-align: left;
+                    word-wrap: break-word;
                     border: 1px solid $color-grey;
+                  }
+                  .descriptions {
+                    max-width: 20vw;
+                    line-height: normal;
+                  }
+                  .statuses {
+                    padding: 6px 0 6px 10px;
+                    //padding-left: 10px;
+                    @include flex-horizontal();
+                    justify-content: flex-start;
+                    //border: none;
+                    img {
+                      height: 16px;
+                      width: auto;
+                      //border: 1px solid blue;
+                    }
+                    p {
+                      margin-left: 10px;
+                      @include text-font(14px, 300, 18px, 0);
+                      text-transform: uppercase;
+                      //border: 1px solid blue;
+                    }
                   }
                   .actions {
                     //width: 10vw;
                     padding: 6px 0 6px 10px;
+                    //padding-left: 10px;
                     @include flex-horizontal();
                     justify-content: flex-start;
-                    border: 1px solid $color-grey;
+                    //border: 1px solid $color-grey;
                     .btn-action {
                       margin-right: 10px;
                       padding: 0 2px;
@@ -352,7 +432,6 @@ body {
                       margin-right: 10px;
                       height: 70%;
                     }
-                    
                   }
                 }
               }

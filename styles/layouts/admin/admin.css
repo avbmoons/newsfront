@@ -1,6 +1,10 @@
 @font-face {
   font-family: Roboto;
-  src: url(../../assets/font/Roboto.ttf);
+  src: url(../../assets/font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url(../../assets/font/RobotoCondensed-VariableFont_wght.ttf);
 }
 * {
   margin: 0;
@@ -65,7 +69,7 @@ body {
 .wrapper .top header .header-block .header-logo-box .header-logo {
   margin: 0 auto;
   width: auto;
-  height: 60%;
+  height: 70%;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -97,9 +101,9 @@ body {
 }
 .wrapper .top header .header-block .menu-box .menu .menu-item-box .menu-item {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 18px;
   letter-spacing: 0;
   color: #fdfcf4;
 }
@@ -135,9 +139,9 @@ body {
   box-sizing: border-box;
 }
 .wrapper .top header .header-block .services-box .services .service-time p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 14px;
   letter-spacing: 0;
   color: #fdfcf4;
 }
@@ -145,9 +149,9 @@ body {
   margin-right: 5vw;
   max-width: 50%;
   padding: 1vh 2.4vw;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 18px;
   letter-spacing: 0;
   color: #fdfcf4;
   background: none;
@@ -182,13 +186,85 @@ body {
 .wrapper .top main .main-block .sidebar {
   margin: 0 auto;
   width: 20vw;
-  height: inherit;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
   justify-content: flex-start;
   background-color: #e9e7e0;
+}
+.wrapper .top main .main-block .sidebar .sidebar-head {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.wrapper .top main .main-block .sidebar .sidebar-head .service-time {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  z-index: 999;
+}
+.wrapper .top main .main-block .sidebar .sidebar-head .service-time p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 0;
+  color: #1b1357;
+}
+.wrapper .top main .main-block .sidebar .sidebar-menu-block {
+  margin: 0 auto;
+  margin-left: 23%;
+  width: 65%;
+  height: auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.wrapper .top main .main-block .sidebar .sidebar-menu-block .sidebar-menu-box {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.wrapper .top main .main-block .sidebar .sidebar-menu-block .sidebar-menu-box .menu-icon {
+  width: 20px;
+  height: 20px;
+}
+.wrapper .top main .main-block .sidebar .sidebar-menu-block .sidebar-menu-box .bth-menu-item {
+  margin: 0 auto;
+  margin-left: 0;
+  padding: 0 20px;
+  background: none;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: #1b1357;
+  cursor: pointer;
+}
+.wrapper .top main .main-block .sidebar .sidebar-menu-block .sidebar-menu-box:hover .bth-menu-item {
+  color: #2799b0;
+}
+.wrapper .top main .main-block .sidebar .sidebar-menu-block .sidebar-menu-box:hover .menu-icon path {
+  stroke: #2799b0;
 }
 .wrapper .top main .main-block .admin-content {
   margin: 0 auto;
@@ -344,11 +420,17 @@ body {
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 14px;
   letter-spacing: 0;
   color: #1b1357;
+}
+.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .add-block .add-box:hover .btn-add .img-add path {
+  fill: #2799b0;
+}
+.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .add-block .add-box:hover .lable-add {
+  color: #2799b0;
 }
 .wrapper .top main .main-block .admin-content .table-block {
   margin: 0 auto;
@@ -406,7 +488,31 @@ body {
 .wrapper .top main .main-block .admin-content .table-block table tbody tr td {
   padding: 10px 0 10px 10px;
   text-align: left;
+  word-wrap: break-word;
   border: 1px solid #cac9c2;
+}
+.wrapper .top main .main-block .admin-content .table-block table tbody tr .descriptions {
+  max-width: 20vw;
+  line-height: normal;
+}
+.wrapper .top main .main-block .admin-content .table-block table tbody tr .statuses {
+  padding: 6px 0 6px 10px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.wrapper .top main .main-block .admin-content .table-block table tbody tr .statuses img {
+  height: 16px;
+  width: auto;
+}
+.wrapper .top main .main-block .admin-content .table-block table tbody tr .statuses p {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 .wrapper .top main .main-block .admin-content .table-block table tbody tr .actions {
   padding: 6px 0 6px 10px;
@@ -414,7 +520,6 @@ body {
   justify-content: center;
   box-sizing: border-box;
   justify-content: flex-start;
-  border: 1px solid #cac9c2;
 }
 .wrapper .top main .main-block .admin-content .table-block table tbody tr .actions .btn-action {
   margin-right: 10px;
