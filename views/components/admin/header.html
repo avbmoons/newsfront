@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    тут шаблон хедера админки
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin header</title>
+    <link
+      rel="stylesheet"
+      href="../../../styles/admin/components/header/header.css"
+    />
+    <script defer src="../../../scripts/timenow.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-block">
+        <div class="header-logo-box">
+          <div class="header-logo">
+            <img src="../../../assets/logo/Logo-admin2.png" alt="logo" />
+          </div>
+        </div>
+        <div class="menu-box">
+          <div class="menu">
+            <div class="menu-item-box">
+              <a href="../../../index.html" class="menu-item">Home</a>
+            </div>
+            <div class="menu-item-box">
+              <a href="../../category/index.html" class="menu-item"
+                >Categories</a
+              >
+            </div>
+            <div class="menu-item-box">
+              <a href="../../news/index.html" class="menu-item">All News</a>
+            </div>
+            <div class="menu-item-box">
+              <a href="../../about.html" class="menu-item">About</a>
+            </div>
+          </div>
+        </div>
+        <div class="services-box">
+          <div class="services">
+            <div class="service-time">
+              <!-- <p><time datetime="" id="currentTime"></time></p> -->
+              <p id="currentTime2"></p>
+            </div>
+            <button class="service-button">Sign Out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

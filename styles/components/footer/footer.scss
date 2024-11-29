@@ -1,0 +1,101 @@
+@use 'sass:math';
+
+@import '../../vars/vars.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+}
+
+@mixin footer {
+  footer {
+    margin: 0 auto;
+    width: 100%;
+    height: $footer-height;
+    @include flex-vertical();
+    background-color: $color-main-dark;
+    .footer-block {
+      margin: 0 auto;
+      width: $block-width;
+      height: 80%;
+      @include flex-horizontal();
+      justify-content: space-between;
+      .footer-contacts {
+        margin: 0 auto;
+        width: 20%;
+        height: 100%;
+        @include flex-vertical();
+        .footer-logo {
+          margin: 0;
+          margin-top: 3vh;
+          height: 45%;
+          width: auto;
+          img {
+            height: 100%;
+          }
+        }
+      }
+      .footer-socials {
+        margin: 0 auto;
+        width: 40%;
+        height: 100%;
+        @include flex-vertical();
+      }
+      .footer-menu {
+        margin: 0 auto;
+        width: 40%;
+        height: 100%;
+        @include flex-vertical();
+        .menu-box {
+          margin: 0 auto;
+          width: 100%;
+          height: fit-content;
+          @include flex-horizontal();
+          justify-content: flex-end;
+          .service-button {
+            margin-top: 3vh;
+            padding: 1vh 2vw;
+            @include text-font(2.4vh, 300, 2.4vh, 0);
+            color: $color-white;
+            background-color: $color-main-dark;
+            border: 1px solid $color-white;
+            border-radius: 3px;
+          }
+          .request {
+            border: none;
+          }
+          .service-button:hover {
+            background-color: $color-main-light;
+          }
+          .request:hover {
+            background-color: $color-main-dark;
+            color: $color-main;
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      margin: 0 auto;
+      width: $block-width;
+      height: 20%;
+      @include flex-horizontal();
+      justify-content: flex-start;
+      .copyrights {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        p {
+          @include text-font(1.5vh, 200, 1.5vh, 0);
+          color: $color-white;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@include footer();

@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    тут шаблон футера фронт страниц
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <link rel="stylesheet" href="../../styles/components/footer/footer.css" />
+    <script defer src="../../scripts/timenow.js"></script>
+  </head>
+  <body>
+    <footer>
+      <div class="footer-block">
+        <div class="footer-contacts">
+          <div class="footer-logo">
+            <img src="../../assets/logo/logo-white.png" alt="logo" />
+          </div>
+        </div>
+        <div class="footer-socials"></div>
+        <div class="footer-menu">
+          <div class="menu-box">
+            <button
+              class="service-button request"
+              onclick="location.href='../order/index.html'"
+            >
+              Export request
+            </button>
+            <button
+              class="service-button"
+              onclick="location.href='../mail/index.html'"
+            >
+              Send message
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyrights">
+          <p>&#169; All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
