@@ -64,12 +64,15 @@ body {
             background-color: $color-main-dark;
             border: 1px solid $color-white;
             border-radius: 3px;
+            cursor: pointer;
           }
           .request {
             border: none;
           }
           .service-button:hover {
-            background-color: $color-main-light;
+            background-color: $color-main;
+            color: $color-main-dark;
+            border-color: $color-main;
           }
           .request:hover {
             background-color: $color-main-dark;

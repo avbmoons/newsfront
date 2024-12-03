@@ -67,7 +67,7 @@ body {
               color: $color-white;
             }
             .menu-item:hover {
-              color: $admin-color-accent-light; // yellow;
+              color: $admin-color-accent-light-super; // yellow;
               //text-decoration: underline 2px;
             }
             .menu-item:first-child {
@@ -111,11 +111,12 @@ body {
             border: 1px solid $color-white;
             border-radius: 3px;
             outline: none;
+            cursor: pointer;
             //background-color: grey;
           }
           .service-button:hover {
-            border-color: $admin-color-accent-light;
-            color: $admin-color-accent-light;
+            border-color: $admin-color-accent-light-super;
+            color: $admin-color-accent-light-super;
           }
         }
       }

@@ -1,6 +1,8 @@
 @use 'sass:math';
 
 @import '../../vars/vars.scss';
+@import '../../components/header/header.scss';
+@import '../../components/footer/footer.scss';
 
 * {
   margin: 0;
@@ -25,165 +27,20 @@ body {
     @include flex-vertical();
     justify-content: space-between;
     flex-grow: 1;
-    header {
-      position: fixed;
-      margin: 0 auto;
-      width: 100%;
-      height: $header-height;
-      @include flex-vertical();
-      background-color: $color-white;
-      .header-block {
-        margin: 0 auto;
-        width: $block-width;
-        height: 60%;
-        @include flex-vertical();
-        background-color: $color-white;
-        border-bottom: 1px solid $color-grey;
-        .header-box {
-          margin: 0 auto;
-          width: 100%;
-          height: 100%;
-          @include flex-horizontal();
-          justify-content: space-between;
-          .header-logo-box {
-            margin: 0 auto;
-            width: 70%;
-            height: 100%;
-            @include flex-vertical();
-            .header-logo {
-              margin: 0 auto;
-              height: 60%;
-              width: 100%;
-              @include flex-horizontal();
-              justify-content: flex-start;
-              img {
-                height: 100%;
-              }
-            }
-          }
-          .services-box {
-            margin: 0 auto;
-            width: 30%;
-            height: 100%;
-            @include flex-vertical();
-            .services {
-              margin: 0 auto;
-              width: 100%;
-              height: auto;
-              @include flex-horizontal();
-              justify-content: flex-end;
-              .service-button {
-                max-width: 50%;
-                padding: 1vh 2vw;
-                @include text-font(2.4vh, 300, 2.4vh, 0);
-                color: $color-white;
-                background-color: $color-main-dark;
-                border: none;
-                border-radius: 3px;
-              }
-              .service-button:hover {
-                background-color: $color-main-light;
-              }
-            }
-          }
-        }
-      }
-      .menu-block {
-        margin: 0 auto;
-        width: $block-width;
-        height: 20%;
-        @include flex-vertical();
-        background-color: $color-white;
-        .menu-box {
-          margin: 0 auto;
-          width: 100%;
-          height: 100%;
-          @include flex-horizontal();
-          justify-content: space-between;
-          .menu {
-            margin: 0 auto;
-            width: 70%;
-            @include flex-horizontal();
-            justify-content: flex-start;
-            .menu-item-box {
-              margin-right: 10px;
-              height: 100%;
-              @include flex-vertical();
-              .menu-item {
-                text-decoration: none;
-                @include text-font(2.4vh, 300, 2.4vh, 0);
-                color: $color-main-light;
-              }
-              .menu-item:hover {
-                color: $color-main-dark;
-                text-decoration: underline 2px;
-              }
-            }
-            .services {
-              margin: 0 auto;
-              width: 100%;
-              height: auto;
-              @include flex-horizontal();
-              justify-content: flex-end;
-              .service-button {
-                max-width: 50%;
-                padding: 0 2vw;
-                @include text-font(2.4vh, 300, 2.4vh, 0);
-                color: $color-main-light;
-                background: none;
-                border: none;
-                border-radius: 3px;
-              }
-              .service-button:hover {
-                color: $color-main-dark;
-                text-decoration: underline 2px;
-              }
-            }
-          }
-          .admin {
-            width: 30%;
-            justify-content: flex-end;
-          }
-        }
-      }
-      .categories-block {
-        margin: 0 auto;
-        width: $block-width;
-        height: 20%;
-        @include flex-vertical();
-        background-color: $color-white;
-        .categories-box {
-          margin: 0 auto;
-          width: 100%;
-          height: 100%;
-          @include flex-horizontal();
-          .category-item-box {
-            margin-right: 2vw;
-            height: 100%;
-            @include flex-vertical();
-            .category-item {
-              text-decoration: none;
-              @include text-font(2.1vh, 300, 2.1vh, 0);
-              color: $color-grey-dark;
-            }
-            .category-item:hover {
-              color: $color-grey-dark;
-              text-decoration: underline 2px;
-            }
-          }
-        }
-      }
-    }
+
+    @include header();
     main {
       margin: 0 auto;
       margin-top: $header-height;
       width: $block-width;
-      height: $min-main-height;
+      min-height: $min-main-height;
       @include flex-vertical();
       justify-content: flex-start;
       background-color: white;
       .title-block {
         margin: 0 auto;
+        // margin-top: 20px;
+        // margin-bottom: 20px;
         width: 100%;
         height: $page-title-height;
         @include flex-vertical();
@@ -193,95 +50,91 @@ body {
           height: fit-content;
           @include flex-horizontal();
           .title {
-            @include text-font(36px, 400, 36px, 0);
+            @include text-font(28px, 400, 28px, 0);
             color: $color-main-dark;
           }
         }
       }
-    }
-  }
-  footer {
-    margin: 0 auto;
-    width: 100%;
-    height: $footer-height;
-    @include flex-vertical();
-    background-color: $color-main-dark;
-    .footer-block {
-      margin: 0 auto;
-      width: $block-width;
-      height: 80%;
-      @include flex-horizontal();
-      justify-content: space-between;
-      .footer-contacts {
+      .form-input {
         margin: 0 auto;
-        width: 20%;
-        height: 100%;
+        margin-bottom: 90px;
+        width: 60%;
+        //min-height: 75%;  // 70%;
+        height: auto;
+        border: 2px solid $color-main;
+        border-radius: 5px;
         @include flex-vertical();
-        .footer-logo {
-          margin: 0;
-          margin-top: 3vh;
-          height: 45%;
-          width: auto;
-          img {
-            height: 100%;
-          }
-        }
-      }
-      .footer-socials {
-        margin: 0 auto;
-        width: 40%;
-        height: 100%;
-        @include flex-vertical();
-      }
-      .footer-menu {
-        margin: 0 auto;
-        width: 40%;
-        height: 100%;
-        @include flex-vertical();
-        .menu-box {
+        justify-content: space-around;
+        //background-color: grey;
+        .input-box {
           margin: 0 auto;
-          width: 100%;
-          height: fit-content;
-          @include flex-horizontal();
-          justify-content: flex-end;
-          .service-button {
-            margin-top: 3vh;
-            padding: 1vh 2vw;
+          margin-bottom: $input-marginb;
+          width: $input-width;
+          height: auto;
+          @include flex-vertical();
+          justify-content: space-between;
+          //border: 1px solid green;
+          .input-lable {
+            margin: 0 auto;
+            width: 100%;
+            //margin-bottom: 10px;  // $input-lable-marginb;
+            @include text-font(2.4vh, 300, 2.4vh, 0);
+            color: $color-main-dark;
+          }
+          .input-text {
+            margin: 0 auto;
+            margin-top: $input-lable-marginb; // 10px;
+            padding-left: 10px;
+            //margin-bottom: $input-marginb;
+            width: 100%;  // $input-width;
+            height: $input-height;
+            @include text-font(14px, 300, 14px, 0);
+            color: $color-black;
+            border: 1px solid $color-grey;
+            border-radius: 3px;
+            outline: none;
+          }
+          .input-text:focus {
+            border: 2px solid $color-main;
+          }
+          .link-page {
+            margin: 0 auto;
+            width: 100%;
+            @include text-font(2.4vh, 300, 2.4vh, 0);
+            text-decoration: none;
+            text-align: left;
+            color: $color-main-dark;
+          }
+          .link-page:hover {
+            text-decoration: underline;
+          }
+          .btn-form {
+            margin: 0 auto;
+            margin-left: 0;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: $form-btn-width;
+            height: $form-btn-height;
             @include text-font(2.4vh, 300, 2.4vh, 0);
             color: $color-white;
             background-color: $color-main-dark;
-            border: 1px solid $color-white;
-            border-radius: 3px;
-          }
-          .request {
             border: none;
+            outline: none;
+            border-radius: 3px;
+            cursor: pointer;
           }
-          .service-button:hover {
-            background-color: $color-main-light;
-          }
-          .request:hover {
-            background-color: $color-main-dark;
-            color: $color-main;
-          }
+          .btn-form:hover {
+            background-color: $color-main;
+            color: $color-main-dark;
+          }          
         }
-      }
-    }
-    .footer-bottom {
-      margin: 0 auto;
-      width: $block-width;
-      height: 20%;
-      @include flex-horizontal();
-      justify-content: flex-start;
-      .copyrights {
-        margin: 0 auto;
-        width: 100%;
-        height: auto;
-        p {
-          @include text-font(1.5vh, 200, 1.5vh, 0);
-          color: $color-white;
-          text-align: left;
+        .first {
+          margin-top: 40px;
         }
+
       }
     }
   }
+
+  @include footer();
 }

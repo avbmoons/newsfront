@@ -20,6 +20,15 @@ $min-main-height: 100vh - $header-height; // 80vh;
 $admin-min-main-height: 100vh - ($admin-header-height); // 90vh
 $page-title-height: 10vh;
 
+$input-width: 90%;
+$input-height: 40px;
+$input-lable-marginb: 10px;
+$input-marginb:20px;
+
+$form-btn-width: 25%;
+$form-btn-height: $input-height;
+
+
 $color-main: #abbee6; //rgb(171, 190, 230)
 $color-main-dark: #370c80; //rgb(55, 12, 128)
 $color-main-light: #656dc4; //rgb(101, 109, 196)
@@ -43,6 +52,7 @@ $admin-color-main-dark: #1b1357; //rgb(27, 19, 87)
 $admin-color-accent: #6423b0; //rgb(101, 35, 176)
 $admin-color-accent-dark: #6171b0; //rgb(97, 113, 176)
 $admin-color-accent-light: #2799b0; //rgb(39, 153, 176)
+$admin-color-accent-light-super: #9de7f5; //rgb()
 
 @font-face {
   font-family: Roboto;

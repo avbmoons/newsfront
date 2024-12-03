@@ -61,15 +61,17 @@ body {
             justify-content: flex-end;
             .service-button {
               max-width: 50%;
-              padding: 1vh 2vw;
+              padding: 1vh 2.4vw;
               @include text-font(2.4vh, 300, 2.4vh, 0);
               color: $color-white;
               background-color: $color-main-dark;
               border: none;
               border-radius: 3px;
+              cursor: pointer;
             }
             .service-button:hover {
-              background-color: $color-main-light;
+              background-color: $color-main;
+              color: $admin-color-main-dark;
             }
           }
         }
@@ -120,6 +122,7 @@ body {
               background: none;
               border: none;
               border-radius: 3px;
+              cursor: pointer;
             }
             .service-button:hover {
               color: $color-main-dark;

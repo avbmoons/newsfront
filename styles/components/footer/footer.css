@@ -91,12 +91,15 @@ footer .footer-block .footer-menu .menu-box .service-button {
   background-color: #370c80;
   border: 1px solid #fdfcf4;
   border-radius: 3px;
+  cursor: pointer;
 }
 footer .footer-block .footer-menu .menu-box .request {
   border: none;
 }
 footer .footer-block .footer-menu .menu-box .service-button:hover {
-  background-color: #656dc4;
+  background-color: #abbee6;
+  color: #370c80;
+  border-color: #abbee6;
 }
 footer .footer-block .footer-menu .menu-box .request:hover {
   background-color: #370c80;

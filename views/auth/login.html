@@ -24,9 +24,9 @@
                 <div class="services">
                   <button
                     class="service-button"
-                    onclick="location.href='../auth/login.html'"
+                    onclick="location.href='../auth/register.html'"
                   >
-                    Sign In
+                    Sign Up
                   </button>
                 </div>
               </div>
@@ -114,9 +114,26 @@
             <div class="title-box">
               <p class="title">Sign In</p>
             </div>
-            <a href="../../views/auth/register.html">Registration</a>
           </section>
-          <form action="#" class="form-input">login form here</form>
+          <form action="#" class="form-input">
+            <div class="input-box first">
+              <label for="email" class="input-lable">Your E-mail</label>            
+              <input type="email" class="input-text" name="email">              
+            </div>
+            <div class="input-box">
+              <label for="password" class="input-lable">Password`</label>            
+              <input type="password" class="input-text" name="password">              
+            </div>
+            <div class="input-box">
+              <a href="#" class="link-page">Forgot your password?</a>              
+            </div>
+            <div class="input-box">
+              <a href="../../views/auth/register.html" class="link-page">Registration</a>              
+            </div>
+            <div class="input-box">
+              <button class="btn-form">Sign In</button>
+            </div> 
+          </form>
         </main>
       </div>
       <footer>

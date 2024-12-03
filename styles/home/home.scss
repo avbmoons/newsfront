@@ -2,6 +2,8 @@
 
 //@import '../../vars/vars.scss';
 @import '../vars/vars.scss';
+@import '../components/header/header.scss';
+@import '../components/footer/footer.scss';
 
 * {
   margin: 0;
@@ -26,155 +28,8 @@ body {
     @include flex-vertical();
     justify-content: space-between;
     flex-grow: 1;
-    header {
-      position: fixed;
-      margin: 0 auto;
-      width: 100%;
-      height: $header-height;
-      @include flex-vertical();
-      background-color: $color-white;
-      .header-block {
-        margin: 0 auto;
-        width: $block-width;
-        height: 60%;
-        @include flex-vertical();
-        background-color: $color-white;
-        border-bottom: 1px solid $color-grey;
-        .header-box {
-          margin: 0 auto;
-          width: 100%;
-          height: 100%;
-          @include flex-horizontal();
-          justify-content: space-between;
-          .header-logo-box {
-            margin: 0 auto;
-            width: 70%;
-            height: 100%;
-            @include flex-vertical();
-            .header-logo {
-              margin: 0 auto;
-              height: 60%;
-              width: 100%;
-              @include flex-horizontal();
-              justify-content: flex-start;
-              img {
-                height: 100%;
-              }
-            }
-          }
-          .services-box {
-            margin: 0 auto;
-            width: 30%;
-            height: 100%;
-            @include flex-vertical();
-            .services {
-              margin: 0 auto;
-              width: 100%;
-              height: auto;
-              @include flex-horizontal();
-              justify-content: flex-end;
-              .service-button {
-                max-width: 50%;
-                padding: 1vh 2vw;
-                @include text-font(2.4vh, 300, 2.4vh, 0);
-                color: $color-white;
-                background-color: $color-main-dark;
-                border: none;
-                border-radius: 3px;
-              }
-              .service-button:hover {
-                background-color: $color-main-light;
-              }
-            }
-          }
-        }
-      }
-      .menu-block {
-        margin: 0 auto;
-        width: $block-width;
-        height: 20%;
-        @include flex-vertical();
-        background-color: $color-white;
-        .menu-box {
-          margin: 0 auto;
-          width: 100%;
-          height: 100%;
-          @include flex-horizontal();
-          justify-content: space-between;
-          .menu {
-            margin: 0 auto;
-            width: 70%;
-            @include flex-horizontal();
-            justify-content: flex-start;
-            .menu-item-box {
-              margin-right: 10px;
-              height: 100%;
-              @include flex-vertical();
-              .menu-item {
-                text-decoration: none;
-                @include text-font(2.4vh, 300, 2.4vh, 0);
-                color: $color-main-light;
-              }
-              .menu-item:hover {
-                color: $color-main-dark;
-                text-decoration: underline 2px;
-              }
-            }
-            .services {
-              margin: 0 auto;
-              width: 100%;
-              height: auto;
-              @include flex-horizontal();
-              justify-content: flex-end;
-              .service-button {
-                max-width: 50%;
-                padding: 0 2vw;
-                @include text-font(2.4vh, 300, 2.4vh, 0);
-                color: $color-main-light;
-                background: none;
-                border: none;
-                border-radius: 3px;
-              }
-              .service-button:hover {
-                color: $color-main-dark;
-                text-decoration: underline 2px;
-              }
-            }
-          }
-          .admin {
-            width: 30%;
-            justify-content: flex-end;
-          }
-        }
-      }
-      .categories-block {
-        margin: 0 auto;
-        width: $block-width;
-        height: 20%;
-        @include flex-vertical();
-        background-color: $color-white;
-        .categories-box {
-          margin: 0 auto;
-          width: 100%;
-          height: 100%;
-          @include flex-horizontal();
-          .category-item-box {
-            margin-right: 2vw;
-            height: 100%;
-            @include flex-vertical();
-            .category-item {
-              text-decoration: none;
-              @include text-font(2.1vh, 300, 2.1vh, 0);
-              color: $color-grey-dark;
-            }
-            .category-item:hover {
-              color: $color-grey-dark;
-              text-decoration: underline 2px;
-            }
-          }
-        }
-      }
-    }
+
+    @include header();
     main {
       margin: 0 auto;
       margin-top: $header-height;
@@ -201,88 +56,7 @@ body {
       }
     }
   }
-  footer {
-    margin: 0 auto;
-    width: 100%;
-    height: $footer-height;
-    @include flex-vertical();
-    background-color: $color-main-dark;
-    .footer-block {
-      margin: 0 auto;
-      width: $block-width;
-      height: 80%;
-      @include flex-horizontal();
-      justify-content: space-between;
-      .footer-contacts {
-        margin: 0 auto;
-        width: 20%;
-        height: 100%;
-        @include flex-vertical();
-        .footer-logo {
-          margin: 0;
-          margin-top: 3vh;
-          height: 45%;
-          width: auto;
-          img {
-            height: 100%;
-          }
-        }
-      }
-      .footer-socials {
-        margin: 0 auto;
-        width: 40%;
-        height: 100%;
-        @include flex-vertical();
-      }
-      .footer-menu {
-        margin: 0 auto;
-        width: 40%;
-        height: 100%;
-        @include flex-vertical();
-        .menu-box {
-          margin: 0 auto;
-          width: 100%;
-          height: fit-content;
-          @include flex-horizontal();
-          justify-content: flex-end;
-          .service-button {
-            margin-top: 3vh;
-            padding: 1vh 2vw;
-            @include text-font(2.4vh, 300, 2.4vh, 0);
-            color: $color-white;
-            background-color: $color-main-dark;
-            border: 1px solid $color-white;
-            border-radius: 3px;
-          }
-          .request {
-            border: none;
-          }
-          .service-button:hover {
-            background-color: $color-main-light;
-          }
-          .request:hover {
-            background-color: $color-main-dark;
-            color: $color-main;
-          }
-        }
-      }
-    }
-    .footer-bottom {
-      margin: 0 auto;
-      width: $block-width;
-      height: 20%;
-      @include flex-horizontal();
-      justify-content: flex-start;
-      .copyrights {
-        margin: 0 auto;
-        width: 100%;
-        height: auto;
-        p {
-          @include text-font(1.5vh, 200, 1.5vh, 0);
-          color: $color-white;
-          text-align: left;
-        }
-      }
-    }
-  }
+
+
+  @include footer();
 }

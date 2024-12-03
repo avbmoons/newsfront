@@ -90,7 +90,7 @@ header .header-block .menu-box .menu .menu-item-box .menu-item {
   color: #fdfcf4;
 }
 header .header-block .menu-box .menu .menu-item-box .menu-item:hover {
-  color: #2799b0;
+  color: #9de7f5;
 }
 header .header-block .menu-box .menu .menu-item-box .menu-item:first-child {
   margin-left: 2vw;
@@ -142,8 +142,9 @@ header .header-block .services-box .services .service-button {
   border: 1px solid #fdfcf4;
   border-radius: 3px;
   outline: none;
+  cursor: pointer;
 }
 header .header-block .services-box .services .service-button:hover {
-  border-color: #2799b0;
-  color: #2799b0;
+  border-color: #9de7f5;
+  color: #9de7f5;
 }/*# sourceMappingURL=header.css.map */
