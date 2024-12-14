@@ -499,7 +499,7 @@ body {
   margin: 0 auto;
   margin-top: 10vh;
   width: 100%;
-  height: 90vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -606,6 +606,9 @@ body {
 .wrapper .top main .main-block .sidebar .sidebar-menu-block .sidebar-menu-box:hover .menu-icon path {
   stroke: #2799b0;
 }
+.wrapper .top main .main-block .sidebar {
+  height: inherit;
+}
 .wrapper .top main .main-block .admin-content {
   margin: 0 auto;
   width: 80vw;
@@ -619,7 +622,9 @@ body {
 }
 .wrapper .top main .main-block .admin-content .head-block {
   margin: 0 auto;
-  width: 100%;
+  margin-top: 20px;
+  margin-right: 15vw;
+  width: 60vw;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -628,7 +633,7 @@ body {
 }
 .wrapper .top main .main-block .admin-content .head-block .title-block {
   margin: 0 auto;
-  width: 40%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -645,243 +650,164 @@ body {
   justify-content: flex-start;
 }
 .wrapper .top main .main-block .admin-content .head-block .title-block .title-box .title {
-  padding-left: 2vw;
   font-size: 24px;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0;
   color: #1b1357;
 }
-.wrapper .top main .main-block .admin-content .head-block .services-block {
+.wrapper .top main .main-block .admin-content .form-input {
   margin: 0 auto;
-  width: 60%;
-  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 90px;
+  margin-right: 15vw;
+  width: 60vw;
+  height: auto;
+  border: 1px solid #cac9c2;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
+  justify-content: space-around;
 }
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box {
+.wrapper .top main .main-block .admin-content .form-input .input-box {
   margin: 0 auto;
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  justify-content: flex-start;
-}
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .search-block {
-  margin: 0 auto;
-  width: 34vw;
-  height: 100%;
+  margin-bottom: 20px;
+  width: 90%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
+  justify-content: space-between;
 }
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .search-block .search-box {
+.wrapper .top main .main-block .admin-content .form-input .input-box .input-lable {
   margin: 0 auto;
   width: 100%;
-  height: inherit;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  justify-content: flex-end;
+  font-size: 2.4vh;
+  font-weight: 300;
+  line-height: 2.4vh;
+  letter-spacing: 0;
+  color: #370c80;
 }
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .search-block .search-box .input-search {
+.wrapper .top main .main-block .admin-content .form-input .input-box .input-text {
+  margin: 0 auto;
+  margin-top: 10px;
   padding-left: 10px;
-  min-width: 90%;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 14px;
-  letter-spacing: 0;
-  border: 1px solid #cac9c2;
-  border-radius: 3px;
-}
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .search-block .search-box .input-search::-moz-placeholder {
-  font-size: 14px;
-  font-weight: 200;
-  line-height: 14px;
-  letter-spacing: 0;
-  color: #cac9c2;
-}
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .search-block .search-box .input-search::placeholder {
-  font-size: 14px;
-  font-weight: 200;
-  line-height: 14px;
-  letter-spacing: 0;
-  color: #cac9c2;
-}
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .search-block .search-box .input-search:focus {
-  border: 2px solid #2799b0;
-  outline: none;
-}
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .search-block .search-box .btn-search {
-  background: none;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .search-block .search-box .btn-search:hover {
-  background-color: #2799b0;
-}
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .add-block {
-  margin: 0 auto;
-  width: 15vw;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-sizing: border-box;
-}
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .add-block .add-box {
-  margin: 0 auto;
   width: 100%;
-  height: inherit;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-}
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .add-block .add-box .btn-add {
-  background: none;
-  border: none;
-  border-radius: 3px;
-  color: #1b1357;
-  cursor: pointer;
-}
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .add-block .add-box .btn-add .img-add:hover path {
-  fill: #2799b0;
-}
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .add-block .add-box .lable-add {
-  margin-right: 5vw;
-  padding-left: 1vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-sizing: border-box;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 14px;
-  letter-spacing: 0;
-  color: #1b1357;
-}
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .add-block .add-box:hover .btn-add .img-add path {
-  fill: #2799b0;
-}
-.wrapper .top main .main-block .admin-content .head-block .services-block .services-box .add-block .add-box:hover .lable-add {
-  color: #2799b0;
-}
-.wrapper .top main .main-block .admin-content .table-block {
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-sizing: border-box;
-  justify-content: flex-start;
-}
-.wrapper .top main .main-block .admin-content .table-block table {
-  margin: 0 auto;
-  margin-left: 2vw;
-  margin-right: 5vw;
-  width: 91.25%;
-  height: auto;
-  border-collapse: collapse;
-  border: 1px solid #cac9c2;
-}
-.wrapper .top main .main-block .admin-content .table-block table thead {
-  font-family: RobotoCondensed;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
-  letter-spacing: 0;
-  color: #1b1357;
-  text-transform: uppercase;
-}
-.wrapper .top main .main-block .admin-content .table-block table thead tr {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.wrapper .top main .main-block .admin-content .table-block table thead tr th {
-  padding: 8px 0 8px 10px;
-  text-align: left;
-  border: 1px solid #cac9c2;
-}
-.wrapper .top main .main-block .admin-content .table-block table thead tr .th-fixed {
-  width: 140px;
-}
-.wrapper .top main .main-block .admin-content .table-block table thead tr .th-status {
-  width: 120px;
-}
-.wrapper .top main .main-block .admin-content .table-block table thead tr .th-id {
-  width: 60px;
-}
-.wrapper .top main .main-block .admin-content .table-block table tbody {
+  height: 40px;
   font-size: 14px;
   font-weight: 300;
   line-height: 14px;
   letter-spacing: 0;
   color: #181818;
-}
-.wrapper .top main .main-block .admin-content .table-block table tbody tr {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.wrapper .top main .main-block .admin-content .table-block table tbody tr td {
-  padding: 4px 0 4px 10px;
-  text-align: left;
-  word-wrap: break-word;
   border: 1px solid #cac9c2;
-}
-.wrapper .top main .main-block .admin-content .table-block table tbody tr td .statuses {
-  display: flex;
-  justify-content: center;
+  border-radius: 3px;
+  outline: none;
   box-sizing: border-box;
-  justify-content: flex-start;
 }
-.wrapper .top main .main-block .admin-content .table-block table tbody tr td .statuses img {
-  height: 16px;
-  width: auto;
+.wrapper .top main .main-block .admin-content .form-input .input-box .input-text:focus {
+  border: 2px solid #abbee6;
 }
-.wrapper .top main .main-block .admin-content .table-block table tbody tr td .statuses p {
-  margin-left: 10px;
-  font-size: 14px;
+.wrapper .top main .main-block .admin-content .form-input .input-box .area {
+  min-height: 80px;
+  padding-top: 10px;
+  line-height: normal;
+}
+.wrapper .top main .main-block .admin-content .form-input .input-box .link-page {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 2.4vh;
   font-weight: 300;
-  line-height: 18px;
+  line-height: 2.4vh;
   letter-spacing: 0;
-  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+  color: #370c80;
 }
-.wrapper .top main .main-block .admin-content .table-block table tbody tr td .actions {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  justify-content: flex-start;
+.wrapper .top main .main-block .admin-content .form-input .input-box .link-page:hover {
+  text-decoration: underline;
 }
-.wrapper .top main .main-block .admin-content .table-block table tbody tr td .actions .btn-action {
-  margin-right: 10px;
-  padding: 0 2px;
+.wrapper .top main .main-block .admin-content .form-input .input-box .btn-form {
+  margin: 0 auto;
+  margin-left: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 25%;
+  height: 60px;
+  font-size: 2.4vh;
+  font-weight: 300;
+  line-height: 2.4vh;
+  letter-spacing: 0;
+  color: #fdfcf4;
+  background-color: #1b1357;
   border: none;
-  background: none;
+  outline: none;
+  border-radius: 3px;
   cursor: pointer;
 }
-.wrapper .top main .main-block .admin-content .table-block table tbody tr td .actions .btn-action svg {
-  width: 20px;
-  height: 20px;
+.wrapper .top main .main-block .admin-content .form-input .input-box .btn-form:hover {
+  background-color: #abbee6;
+  color: #370c80;
 }
-.wrapper .top main .main-block .admin-content .table-block table tbody tr td .actions .btn-action:hover svg path {
-  fill: #2799b0;
+.wrapper .top main .main-block .admin-content .form-input .input-box .cancel {
+  margin-right: 0;
+  color: #1b1357;
+  background-color: #ffffff;
+  border: 1px solid #1b1357;
 }
-.wrapper .top main .main-block .admin-content .table-block table tbody tr td .actions a {
-  margin-right: 10px;
-  height: 70%;
+.wrapper .top main .main-block .admin-content .form-input .input-box .cancel:hover {
+  color: #2799b0;
+  background-color: #ffffff;
+  border: 1px solid #2799b0;
 }
-.wrapper .top main .main-block .admin-content .table-block table tbody tr .descriptions {
-  max-width: 20vw;
-  line-height: normal;
+.wrapper .top main .main-block .admin-content .form-input .input-box .input-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.wrapper .top main .main-block .admin-content .form-input .input-box .input-group .half {
+  margin-left: 0;
+  margin-right: 0;
+  width: 50%;
+}
+.wrapper .top main .main-block .admin-content .form-input .input-box .input-group .half .file {
+  padding-left: 0;
+  border: none;
+}
+.wrapper .top main .main-block .admin-content .form-input .input-box .input-group .half .file::file-selector-button {
+  margin-right: 20px;
+  margin-left: 0;
+  padding: 0 20px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #1b1357;
+  border: 1px solid #1b1357;
+  border-radius: 3px;
+  color: #fdfcf4;
+  height: 100%;
+}
+.wrapper .top main .main-block .admin-content .form-input .input-box .input-group .half .file::file-selector-button:hover {
+  background-color: #abbee6;
+  border-color: #abbee6;
+  color: #1b1357;
+}
+.wrapper .top main .main-block .admin-content .form-input .input-box .input-group .mini {
+  margin-right: 0;
+  margin-left: 0;
+  width: 40%;
+}
+.wrapper .top main .main-block .admin-content .form-input .first {
+  margin-top: 40px;
+}
+.wrapper .top main .main-block .admin-content .form-input .admin {
+  margin-top: 20px;
+}
+.wrapper .top main .main-block .admin-content .admin {
+  margin-top: 0;
 }
 .wrapper footer {
   margin: 0 auto;
@@ -918,4 +844,4 @@ body {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-}/*# sourceMappingURL=start.css.map */
+}/*# sourceMappingURL=forms.css.map */

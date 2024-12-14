@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>N&T_Mail</title>
     <link rel="stylesheet" href="../../styles/mail/mail.css" />
-    <script defer src="../../scripts/timenow.js"></script>
+    <script defer src="../../scripts/timesite.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -20,6 +20,9 @@
               </div>
               <div class="services-box">
                 <div class="services">
+                  <div class="service-time">
+                    <p id="currentTimeSite"></p>
+                  </div>
                   <button class="service-button" onclick="location.href='../auth/login.html'">Sign In</button>
                 </div>
               </div>
@@ -101,6 +104,23 @@
               <p class="title">Send message</p>
             </div>
           </section>
+          <form action="#" class="form-input">
+            <div class="input-box first">
+              <label for="username" class="input-lable">Your name</label>            
+              <input type="text" class="input-text" name="username">              
+            </div>
+            <div class="input-box">
+              <label for="email" class="input-lable">Your E-mail</label>            
+              <input type="email" class="input-text" name="email">              
+            </div>
+            <div class="input-box">
+              <label for="message" class="input-lable">Your message</label>
+              <textarea class="input-text area" name="message" id=""></textarea>            
+            </div>
+            <div class="input-box">
+              <button class="btn-form">Send message</button>
+            </div> 
+          </form>
         </main>
       </div>
       <footer>

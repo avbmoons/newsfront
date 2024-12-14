@@ -82,6 +82,12 @@ body {
           color: $admin-color-main-dark;
           cursor: pointer;
         }
+        .active {
+          color: $admin-color-accent-dark;
+        }
+        .active path {
+          stroke: $admin-color-accent-dark;
+        }
       }
       .sidebar-menu-box:hover .bth-menu-item {
         color: $admin-color-accent-light;
@@ -89,6 +95,13 @@ body {
       .sidebar-menu-box:hover .menu-icon path {
         stroke: $admin-color-accent-light;
       }
+      // .sidebar-menu-box .bth-menu-item .active {
+      //   color: red; // $admin-color-accent-light;
+      // }
+      // .sidebar-menu-box:hover .menu-icon .active path {
+      //   stroke: red;  // $admin-color-accent-light;
+      // }
+      //.sidebar-menu-box::s
     }
   }
 }

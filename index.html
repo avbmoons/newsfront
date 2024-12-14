@@ -6,7 +6,8 @@
     <title>N&T_Home</title>
     <!-- <link rel="stylesheet" href="../../styles/layouts/main/main.css" /> -->
     <link rel="stylesheet" href="styles/home/home.css" />
-    <script defer src="../../scripts/timenow.js"></script>
+    <script defer src="scripts/timesite.js"></script>
+    <script defer src="scripts/menucolor.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -21,6 +22,9 @@
               </div>
               <div class="services-box">
                 <div class="services">
+                  <div class="service-time">
+                    <p id="currentTimeSite"></p>
+                  </div>
                   <button class="service-button" onclick="location.href='views/auth/login.html'">Sign In</button>
                 </div>
               </div>
@@ -30,25 +34,25 @@
             <div class="menu-box">
               <div class="menu">
                 <div class="menu-item-box">
-                  <a href="index.html" class="menu-item here">Home</a>
+                  <a href="index.html" id="linkMenuHome" class="menu-item here">Home</a>
                 </div>
                 <div class="menu-item-box">
                   <img src="assets/icons/separator.png" alt="" />
                 </div>
                 <div class="menu-item-box">
-                  <a href="views/category/index.html" class="menu-item">Categories</a>
+                  <a href="views/category/index.html" id="linkMenuCategories" class="menu-item">Categories</a>
                 </div>
                 <div class="menu-item-box">
                   <img src="assets/icons/separator.png" alt="" />
                 </div>
                 <div class="menu-item-box">
-                  <a href="views/news/index.html" class="menu-item">All News</a>
+                  <a href="views/news/index.html" id="linkMenuNews" class="menu-item">All News</a>
                 </div>
                 <div class="menu-item-box">
                   <img src="assets/icons/separator.png" alt="" />
                 </div>
                 <div class="menu-item-box">
-                  <a href="views/about.html" class="menu-item">About</a>
+                  <a href="views/about.html" id="linkMenuAbout" class="menu-item">About</a>
                 </div>
               </div>
               <div class="menu admin">

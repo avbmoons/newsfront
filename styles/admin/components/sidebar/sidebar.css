@@ -101,6 +101,12 @@ body {
   color: #1b1357;
   cursor: pointer;
 }
+.sidebar .sidebar-menu-block .sidebar-menu-box .active {
+  color: #6171b0;
+}
+.sidebar .sidebar-menu-block .sidebar-menu-box .active path {
+  stroke: #6171b0;
+}
 .sidebar .sidebar-menu-block .sidebar-menu-box:hover .bth-menu-item {
   color: #2799b0;
 }

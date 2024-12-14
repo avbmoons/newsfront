@@ -93,6 +93,21 @@ header .header-block .header-box .services-box .services {
   box-sizing: border-box;
   justify-content: flex-end;
 }
+header .header-block .header-box .services-box .services .service-time {
+  margin: 0 auto;
+  margin-right: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+header .header-block .header-box .services-box .services .service-time p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 0;
+  color: #370c80;
+}
 header .header-block .header-box .services-box .services .service-button {
   max-width: 50%;
   padding: 1vh 2.4vw;
@@ -460,6 +475,21 @@ body {
   box-sizing: border-box;
   justify-content: flex-end;
 }
+.wrapper .top header .header-block .header-box .services-box .services .service-time {
+  margin: 0 auto;
+  margin-right: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.wrapper .top header .header-block .header-box .services-box .services .service-time p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 0;
+  color: #370c80;
+}
 .wrapper .top header .header-block .header-box .services-box .services .service-button {
   max-width: 50%;
   padding: 1vh 2.4vw;
@@ -599,7 +629,7 @@ body {
   margin: 0 auto;
   margin-top: 20vh;
   width: 80vw;
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -618,6 +648,7 @@ body {
 }
 .wrapper .top main .title-block .title-box {
   margin: 0 auto;
+  margin-top: 20px;
   width: auto;
   height: -moz-fit-content;
   height: fit-content;
@@ -626,11 +657,105 @@ body {
   box-sizing: border-box;
 }
 .wrapper .top main .title-block .title-box .title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 28px;
   letter-spacing: 0;
   color: #370c80;
+}
+.wrapper .top main .form-input {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 90px;
+  width: 60%;
+  height: auto;
+  border: 2px solid #abbee6;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+.wrapper .top main .form-input .input-box {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.wrapper .top main .form-input .input-box .input-lable {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 2.4vh;
+  font-weight: 300;
+  line-height: 2.4vh;
+  letter-spacing: 0;
+  color: #370c80;
+}
+.wrapper .top main .form-input .input-box .input-text {
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 0;
+  color: #181818;
+  border: 1px solid #cac9c2;
+  border-radius: 3px;
+  outline: none;
+}
+.wrapper .top main .form-input .input-box .input-text:focus {
+  border: 2px solid #abbee6;
+}
+.wrapper .top main .form-input .input-box .area {
+  min-height: 80px;
+}
+.wrapper .top main .form-input .input-box .link-page {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 2.4vh;
+  font-weight: 300;
+  line-height: 2.4vh;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-align: left;
+  color: #370c80;
+}
+.wrapper .top main .form-input .input-box .link-page:hover {
+  text-decoration: underline;
+}
+.wrapper .top main .form-input .input-box .btn-form {
+  margin: 0 auto;
+  margin-left: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 25%;
+  height: 60px;
+  font-size: 2.4vh;
+  font-weight: 300;
+  line-height: 2.4vh;
+  letter-spacing: 0;
+  color: #fdfcf4;
+  background-color: #370c80;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.wrapper .top main .form-input .input-box .btn-form:hover {
+  background-color: #abbee6;
+  color: #370c80;
+}
+.wrapper .top main .form-input .first {
+  margin-top: 40px;
 }
 .wrapper footer {
   margin: 0 auto;

@@ -88,6 +88,7 @@ body {
           width: 100%;
           @include flex-horizontal();
           justify-content: flex-end;
+          //border: 1px solid wheat;
           .service-time {
             margin: 0 auto;
             margin-right: 2vw;

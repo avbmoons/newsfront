@@ -16,7 +16,7 @@ const categories = [
         description: "Minima autem sit beatae in. Enim asperiores temporibus voluptatum quas.",
         created_at: "2024-10-16 08:46:57",
         updated_at: "2024-10-16 08:46:57",
-        sstatus: "draft",
+        sstatus: "active",
         image: "test1",
     },
     {
@@ -26,7 +26,7 @@ const categories = [
         description: "Voluptas aut aut iste commodi itaque in earum. Voluptas nesciunt sint quia ut perspiciatis ex.",
         created_at: "2024-10-16 08:46:57",
         updated_at: "2024-10-16 08:46:57",
-        sstatus: "draft",
+        sstatus: "active",
         image: "test1",
     },
     {

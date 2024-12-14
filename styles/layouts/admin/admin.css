@@ -314,6 +314,12 @@ body {
   color: #1b1357;
   cursor: pointer;
 }
+.sidebar .sidebar-menu-block .sidebar-menu-box .active {
+  color: #6171b0;
+}
+.sidebar .sidebar-menu-block .sidebar-menu-box .active path {
+  stroke: #6171b0;
+}
 .sidebar .sidebar-menu-block .sidebar-menu-box:hover .bth-menu-item {
   color: #2799b0;
 }
@@ -588,6 +594,12 @@ body {
   color: #1b1357;
   cursor: pointer;
 }
+.wrapper .top main .main-block .sidebar .sidebar-menu-block .sidebar-menu-box .active {
+  color: #6171b0;
+}
+.wrapper .top main .main-block .sidebar .sidebar-menu-block .sidebar-menu-box .active path {
+  stroke: #6171b0;
+}
 .wrapper .top main .main-block .sidebar .sidebar-menu-block .sidebar-menu-box:hover .bth-menu-item {
   color: #2799b0;
 }
@@ -729,7 +741,6 @@ body {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  justify-content: flex-end;
 }
 .wrapper .top main .main-block .admin-content .head-block .services-block .services-box .add-block .add-box .btn-add {
   background: none;

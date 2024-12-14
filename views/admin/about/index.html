@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About_admin</title>
-    <link rel="stylesheet" href="../../../styles/layouts/admin/admin.css" />
+    <!-- <link rel="stylesheet" href="../../../styles/layouts/admin/admin.css" /> -->
+    <link rel="stylesheet" href="../../../styles/admin/pages/pages.css">
     <script defer src="../../../scripts/timenow.js"></script>
+    <script defer src="../../../scripts/sidebarcolor.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -50,7 +52,7 @@
               <div class="sidebar-head">
                 <div class="service-time">
                   <!-- <p><time datetime="" id="currentTime"></time></p> -->
-                  <p id="currentTime1"></p>
+                  <p id="currentTimeSidebar"></p>
                 </div>
               </div>
               <div class="sidebar-menu-block">
@@ -63,33 +65,33 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M12 20V4" stroke="#1B1357" stroke-width="2.8" />
+                    <path id="iconMenuStart" d="M12 20V4" stroke="#1B1357" stroke-width="2.8" />
                     <path
                       d="M17 20L17 13"
                       stroke="#1B1357"
                       stroke-width="2.8"
                     />
-                    <path d="M7 20L7 9" stroke="#1B1357" stroke-width="2.8" />
+                    <path id="iconMenuStart" d="M7 20L7 9" stroke="#1B1357" stroke-width="2.8" />
                   </svg>
                   <button class="bth-menu-item" onclick="location.href='../index.html'">Start</button>
                 </div>
                 <div class="sidebar-menu-box" id="menuHome">
                   <svg
-                    class="menu-icon"
+                    class="menu-icon"                    
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
+                    <path id ="iconMenuHome"
                       d="M3 8.22222L11 2L19 8.22222V18C19 18.4715 18.8127 18.9237 18.4793 19.2571C18.1459 19.5905 17.6937 19.7778 17.2222 19.7778H4.77778C4.30628 19.7778 3.8541 19.5905 3.5207 19.2571C3.1873 18.9237 3 18.4715 3 18V8.22222Z"
                       stroke="#1B1357"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
-                    <path
+                    <path id ="iconMenuHome2"
                       d="M8.33331 19.7778V10.8889H13.6666V19.7778"
                       stroke="#1B1357"
                       stroke-width="2"
@@ -97,7 +99,7 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <button class="bth-menu-item" onclick="location.href='../home/index.html'">Home</button>
+                  <button class="bth-menu-item" id="btnMenuHome" onclick="location.href='../home/index.html'">Home</button>
                 </div>
                 <div class="sidebar-menu-box" id="menuCategories">
                   <svg
@@ -108,12 +110,12 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
+                    <path id="iconMenuCategories"
                       d="M10 3H4C3.73478 3 3.48043 3.10536 3.29289 3.29289C3.10536 3.48043 3 3.73478 3 4V10C3 10.2652 3.10536 10.5196 3.29289 10.7071C3.48043 10.8946 3.73478 11 4 11H10C10.2652 11 10.5196 10.8946 10.7071 10.7071C10.8946 10.5196 11 10.2652 11 10V4C11 3.73478 10.8946 3.48043 10.7071 3.29289C10.5196 3.10536 10.2652 3 10 3ZM9 9H5V5H9V9ZM20 13H14C13.7348 13 13.4804 13.1054 13.2929 13.2929C13.1054 13.4804 13 13.7348 13 14V20C13 20.2652 13.1054 20.5196 13.2929 20.7071C13.4804 20.8946 13.7348 21 14 21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V14C21 13.7348 20.8946 13.4804 20.7071 13.2929C20.5196 13.1054 20.2652 13 20 13ZM19 19H15V15H19V19ZM17 3C14.794 3 13 4.794 13 7C13 9.206 14.794 11 17 11C19.206 11 21 9.206 21 7C21 4.794 19.206 3 17 3ZM17 9C15.897 9 15 8.103 15 7C15 5.897 15.897 5 17 5C18.103 5 19 5.897 19 7C19 8.103 18.103 9 17 9ZM7 13C4.794 13 3 14.794 3 17C3 19.206 4.794 21 7 21C9.206 21 11 19.206 11 17C11 14.794 9.206 13 7 13ZM7 19C5.897 19 5 18.103 5 17C5 15.897 5.897 15 7 15C8.103 15 9 15.897 9 17C9 18.103 8.103 19 7 19Z"
                       fill="#1B1357"
                     />
                   </svg>
-                  <button class="bth-menu-item" onclick="location.href='../categories/index.html'">Categories</button>
+                  <button class="bth-menu-item" id="btnMenuCategories" onclick="location.href='../categories/index.html'">Categories</button>
                 </div>
                 <div class="sidebar-menu-box" id="menuNews">
                   <svg
@@ -124,14 +126,14 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
+                    <path id="iconMenuNews"
                       d="M3 4V18C3 18.5304 3.21071 19.0391 3.58579 19.4142C3.96086 19.7893 4.46957 20 5 20H19C19.5304 20 20.0391 19.7893 20.4142 19.4142C20.7893 19.0391 21 18.5304 21 18V8H17"
                       stroke="#1B1357"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
-                    <path
+                    <path id="iconMenuNews2"
                       d="M3 4H17V18C17 18.5304 17.2107 19.0391 17.5858 19.4142C17.9609 19.7893 18.4696 20 19 20M13 8H7M13 12H9"
                       stroke="#1B1357"
                       stroke-width="2"
@@ -139,7 +141,7 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <button class="bth-menu-item" onclick="location.href='../news/index.html'">News</button>
+                  <button class="bth-menu-item" id="btnMenuNews" onclick="location.href='../news/index.html'">News</button>
                 </div>
                 <div class="sidebar-menu-box" id="menuSources">
                   <svg
@@ -150,12 +152,12 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
+                    <path id="iconMenuSources"
                       d="M7 9H17V7H7V9ZM7 13H11.75C12.0833 12.6 12.446 12.2293 12.838 11.888C13.23 11.5467 13.659 11.2507 14.125 11H7V13ZM7 17H10.05C10.0833 16.65 10.146 16.3083 10.238 15.975C10.33 15.6417 10.4423 15.3167 10.575 15H7V17ZM5 21C4.45 21 3.97933 20.8043 3.588 20.413C3.19667 20.0217 3.00067 19.5507 3 19V5C3 4.45 3.196 3.97933 3.588 3.588C3.98 3.19667 4.45067 3.00067 5 3H19C19.55 3 20.021 3.196 20.413 3.588C20.805 3.98 21.0007 4.45067 21 5V10.575C20.6833 10.4417 20.3583 10.3293 20.025 10.238C19.6917 10.1467 19.35 10.084 19 10.05V5H5V19H10.05C10.0833 19.35 10.146 19.6917 10.238 20.025C10.33 20.3583 10.4423 20.6833 10.575 21H5ZM18 23C16.7833 23 15.721 22.621 14.813 21.863C13.905 21.105 13.334 20.1507 13.1 19H14.65C14.8667 19.7333 15.2793 20.3333 15.888 20.8C16.4967 21.2667 17.2007 21.5 18 21.5C18.9667 21.5 19.7917 21.1583 20.475 20.475C21.1583 19.7917 21.5 18.9667 21.5 18C21.5 17.0333 21.1583 16.2083 20.475 15.525C19.7917 14.8417 18.9667 14.5 18 14.5C17.5167 14.5 17.0667 14.5877 16.65 14.763C16.2333 14.9383 15.8667 15.184 15.55 15.5H17V17H13V13H14.5V14.425C14.95 13.9917 15.475 13.646 16.075 13.388C16.675 13.13 17.3167 13.0007 18 13C19.3833 13 20.5627 13.4877 21.538 14.463C22.5133 15.4383 23.0007 16.6173 23 18C22.9993 19.3827 22.5117 20.562 21.537 21.538C20.5623 22.514 19.3833 23.0013 18 23Z"
                       fill="#1B1357"
                     />
                   </svg>
-                  <button class="bth-menu-item" onclick="location.href='../newssources/index.html'">Sources</button>
+                  <button class="bth-menu-item" id="btnMenuSources" onclick="location.href='../newssources/index.html'">Sources</button>
                 </div>
                 <div class="sidebar-menu-box" id="menuAbout">
                   <svg
@@ -166,20 +168,20 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
+                    <path id="iconMenuAbout"
                       d="M4 4.00098H20V18.001C20 18.5314 19.7893 19.0401 19.4142 19.4152C19.0391 19.7903 18.5304 20.001 18 20.001H6C5.46957 20.001 4.96086 19.7903 4.58579 19.4152C4.21071 19.0401 4 18.5314 4 18.001V4.00098Z"
                       stroke="#1B1357"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
-                    <path
+                    <path id="iconMenuAbout2"
                       d="M12 8H12.01V8.01H12V8Z"
                       stroke="#1B1357"
                       stroke-width="3"
                       stroke-linejoin="round"
                     />
-                    <path
+                    <path id="iconMenuAbout3"
                       d="M12 12V16"
                       stroke="#1B1357"
                       stroke-width="2"
@@ -187,7 +189,7 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <button class="bth-menu-item" onclick="location.href='../about/index.html'">About</button>
+                  <button class="bth-menu-item" id="btnMenuAbout" onclick="location.href='../about/index.html'">About</button>
                 </div>
                 <div class="sidebar-menu-box" id="menuUsers">
                   <svg
@@ -198,21 +200,21 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
+                    <path id="iconMenuUsers"
                       d="M9 13C11.2091 13 13 11.2091 13 9C13 6.79086 11.2091 5 9 5C6.79086 5 5 6.79086 5 9C5 11.2091 6.79086 13 9 13Z"
                       stroke="#1B1357"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
-                    <path
+                    <path id="iconMenuUsers2"
                       d="M16 19C16 15.686 12.866 13 9 13C5.134 13 2 15.686 2 19M15 13C15.6684 13 16.3261 12.8324 16.9131 12.5127C17.5 12.193 17.9975 11.7313 18.3601 11.1698C18.7227 10.6083 18.9388 9.96494 18.9886 9.29841C19.0385 8.63189 18.9205 7.9635 18.6456 7.3543C18.3706 6.7451 17.9473 6.21453 17.4144 5.81105C16.8816 5.40757 16.2561 5.14404 15.5952 5.04456C14.9342 4.94507 14.2589 5.01279 13.6309 5.24154C13.0028 5.47028 12.4421 5.85275 12 6.354"
                       stroke="#1B1357"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
-                    <path
+                    <path id="iconMenuUsers3"
                       d="M22 19C22 15.686 18.866 13 15 13C14.193 13 12.897 12.707 12 11.765"
                       stroke="#1B1357"
                       stroke-width="2"
@@ -220,7 +222,7 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <button class="bth-menu-item" onclick="location.href='../users/index.html'">Users</button>
+                  <button class="bth-menu-item" id="btnMenuUsers" onclick="location.href='../users/index.html'">Users</button>
                 </div>
                 <div class="sidebar-menu-box" id="menuMessages">
                   <svg
@@ -231,12 +233,12 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
+                    <path id="iconMenuMessages"
                       d="M4 2H20C21.103 2 22 2.897 22 4V16C22 17.103 21.103 18 20 18H17V21.767L10.723 18H4C2.897 18 2 17.103 2 16V4C2 2.897 2.897 2 4 2ZM4 16H11.277L15 18.233V16H20V4H4V16Z"
                       fill="#1B1357"
                     />
                   </svg>
-                  <button class="bth-menu-item" onclick="location.href='../mails/index.html'">Messages</button>
+                  <button class="bth-menu-item" id="btnMenuMessages" onclick="location.href='../mails/index.html'">Messages</button>
                 </div>
                 <div class="sidebar-menu-box" id="menuExports">
                   <svg
@@ -247,13 +249,13 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M11 16H13V7H16L12 2L8 7H11V16Z" fill="#1B1357" />
-                    <path
+                    <path id="iconMenuExports" d="M11 16H13V7H16L12 2L8 7H11V16Z" fill="#1B1357" />
+                    <path id="iconMenuExports2" 
                       d="M5 22H19C20.103 22 21 21.103 21 20V11C21 9.897 20.103 9 19 9H15V11H19V20H5V11H9V9H5C3.897 9 3 9.897 3 11V20C3 21.103 3.897 22 5 22Z"
                       fill="#1B1357"
                     />
                   </svg>
-                  <button class="bth-menu-item" onclick="location.href='../orders/index.html'">Exports</button>
+                  <button class="bth-menu-item" id="btnMenuExports" onclick="location.href='../orders/index.html'">Exports</button>
                 </div>
               </div>
             </div>
@@ -280,7 +282,7 @@
                     </div>
                     <div class="add-block">
                       <div class="add-box">
-                        <button class="btn-add">
+                        <button class="btn-add" onclick="location.href='create.html'">
                           <svg
                             class="img-add"
                             width="36"
@@ -306,30 +308,37 @@
               <section class="table-block">
                 <table>
                   <thead>
-                    <tr>
+                    <tr name="head">
                       <th class="th-id">#ID</th>
-                      <th>Title</th>
-                      <th>Description</th>
+                      <th>Section</th>
+                      <th>Resume</th>
+                      <th class="th-status">Visible</th>
                       <th class="th-status">Status</th>
                       <th class="th-fixed">Created</th>
                       <th class="th-fixed">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr name="row">
                       <td>1</td>
-                      <td>title-test</td>
-                      <td>description-test</td>
+                      <td>Substance Abuse Social Worker</td>
+                      <td>Laudantium cupiditate sit ratione.</td>
                       <td>
                         <div class="statuses">
-                          <img src="../../assets/icons/icon-draft.png" alt="" />
+                          <img src="../../../assets/icons/icon-invisible.png" alt="" />
+                          <p>Invisible</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="statuses">
+                          <img src="../../../assets/icons/icon-draft.png" alt="" />
                           <p>Draft</p>
                         </div>
                       </td>
-                      <td>12.02.2023 21:03.54</td>
+                      <td>2024-10-16 08:46:57</td>
                       <td>
                         <div class="actions">
-                          <button class="btn-action">
+                          <button class="btn-action" name="look">
                             <svg
                               width="24"
                               height="24"
@@ -343,7 +352,7 @@
                               />
                             </svg>
                           </button>
-                          <button class="btn-action">
+                          <button class="btn-action" name="edit" onclick="location.href='edit.html'">
                             <svg
                               width="24"
                               height="24"
@@ -357,7 +366,7 @@
                               />
                             </svg>
                           </button>
-                          <button class="btn-action">
+                          <button class="btn-action" name="delete">
                             <svg
                               width="24"
                               height="24"
@@ -376,23 +385,32 @@
                         </div>
                       </td>
                     </tr>
-                    <tr>
+                    <tr name="row">
                       <td>2</td>
-                      <td>title-test</td>
-                      <td class="descriptions">description-test</td>
+                      <td>Talent Acquisition Manager</td>
+                      <td class="descriptions">Et consectetur enim consequuntur inventore ut.</td>
                       <td>
                         <div class="statuses">
                           <img
-                            src="../../assets/icons/icon-active.png"
+                            src="../../../assets/icons/icon-visible.png"
+                            alt=""
+                          />
+                          <p>Visible</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="statuses">
+                          <img
+                            src="../../../assets/icons/icon-active.png"
                             alt=""
                           />
                           <p>Active</p>
                         </div>
                       </td>
-                      <td>12.02.2023 21:03.54</td>
+                      <td>2024-10-16 08:46:57</td>
                       <td>
                         <div class="actions">
-                          <button class="btn-action">
+                          <button class="btn-action" name="look">
                             <svg
                               width="24"
                               height="24"
@@ -406,7 +424,7 @@
                               />
                             </svg>
                           </button>
-                          <button class="btn-action">
+                          <button class="btn-action" name="edit" onclick="location.href='edit.html'">
                             <svg
                               width="24"
                               height="24"
@@ -420,7 +438,79 @@
                               />
                             </svg>
                           </button>
-                          <button class="btn-action">
+                          <button class="btn-action" name="delete">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M6.774 6.4L7.586 20.048C7.59823 20.2514 7.68761 20.4425 7.8359 20.5822C7.9842 20.722 8.18023 20.7999 8.384 20.8H15.616C15.8198 20.7999 16.0158 20.722 16.1641 20.5822C16.3124 20.4425 16.4018 20.2514 16.414 20.048L17.226 6.4H6.774ZM18.429 6.4L17.612 20.119C17.5817 20.6278 17.3582 21.1059 16.9872 21.4555C16.6162 21.8051 16.1258 21.9999 15.616 22H8.384C7.87425 21.9999 7.38377 21.8051 7.01279 21.4555C6.64182 21.1059 6.41833 20.6278 6.388 20.119L5.571 6.4H3.5V5.7C3.5 5.56739 3.55268 5.44021 3.64645 5.34645C3.74021 5.25268 3.86739 5.2 4 5.2H20C20.1326 5.2 20.2598 5.25268 20.3536 5.34645C20.4473 5.44021 20.5 5.56739 20.5 5.7V6.4H18.429ZM14 3C14.1326 3 14.2598 3.05268 14.3536 3.14645C14.4473 3.24021 14.5 3.36739 14.5 3.5V4.2H9.5V3.5C9.5 3.36739 9.55268 3.24021 9.64645 3.14645C9.74021 3.05268 9.86739 3 10 3H14ZM9.5 9H10.7L11.2 18H10L9.5 9ZM13.3 9H14.5L14 18H12.8L13.3 9Z"
+                                fill="#1B1357"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr name="row">
+                      <td>3</td>
+                      <td>Library Assistant</td>
+                      <td class="descriptions">Et eius rerum repellendus fugit.</td>
+                      <td>
+                        <div class="statuses">
+                          <img
+                            src="../../../assets/icons/icon-visible.png"
+                            alt=""
+                          />
+                          <p>Visible</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="statuses">
+                          <img
+                            src="../../../assets/icons/icon-active.png"
+                            alt=""
+                          />
+                          <p>Active</p>
+                        </div>
+                      </td>
+                      <td>2024-10-16 08:46:57</td>
+                      <td>
+                        <div class="actions">
+                          <button class="btn-action" name="look">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.5 18C15.5 18 18.96 15.78 20.74 12.5C18.96 9.22 15.5 7 11.5 7C7.50001 7 4.04001 9.22 2.26001 12.5C4.04001 15.78 7.50001 18 11.5 18ZM11.5 6C16.06 6 20 8.65 21.86 12.5C20 16.35 16.06 19 11.5 19C6.94001 19 3.00001 16.35 1.14001 12.5C3.00001 8.65 6.94001 6 11.5 6ZM11.5 8C14 8 16 10 16 12.5C16 15 14 17 11.5 17C9.00001 17 7.00001 15 7.00001 12.5C7.00001 10 9.00001 8 11.5 8ZM11.5 9C10.5718 9 9.68152 9.36875 9.02514 10.0251C8.36876 10.6815 8.00001 11.5717 8.00001 12.5C8.00001 13.4283 8.36876 14.3185 9.02514 14.9749C9.68152 15.6313 10.5718 16 11.5 16C12.4283 16 13.3185 15.6313 13.9749 14.9749C14.6313 14.3185 15 13.4283 15 12.5C15 11.5717 14.6313 10.6815 13.9749 10.0251C13.3185 9.36875 12.4283 9 11.5 9Z"
+                                fill="#1B1357"
+                              />
+                            </svg>
+                          </button>
+                          <button class="btn-action" name="edit" onclick="location.href='edit.html'">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M20.987 3.01249C20.6663 2.6918 20.2856 2.43742 19.8666 2.26386C19.4476 2.0903 18.9985 2.00098 18.545 2.00098C18.0915 2.00098 17.6424 2.0903 17.2234 2.26386C16.8044 2.43742 16.4237 2.6918 16.103 3.01249L4.01898 15.0985C3.63793 15.4793 3.36642 15.9556 3.23298 16.4775L2.01948 21.22C1.99271 21.325 1.99372 21.4353 2.02242 21.5398C2.05112 21.6444 2.10652 21.7396 2.18318 21.8163C2.25984 21.893 2.35512 21.9484 2.45967 21.9771C2.56422 22.0058 2.67443 22.0068 2.77948 21.98L7.52298 20.768C8.04524 20.6347 8.52194 20.3632 8.90298 19.982L20.987 7.89599C21.6345 7.24835 21.9982 6.37005 21.9982 5.45424C21.9982 4.53843 21.6345 3.66013 20.987 3.01249ZM16.987 3.89649C17.4002 3.48322 17.9606 3.25102 18.5451 3.25097C19.1295 3.25092 19.69 3.48303 20.1032 3.89624C20.5165 4.30945 20.7487 4.8699 20.7488 5.45431C20.7488 6.03872 20.5167 6.59922 20.1035 7.01249L19 8.11599L15.884 4.99949L16.987 3.89649ZM15 5.88349L18.116 8.99999L8.01898 19.098C7.79663 19.3206 7.51837 19.4792 7.21348 19.557L3.49198 20.508L4.44398 16.7875C4.52198 16.4825 4.68048 16.2045 4.90248 15.9825L15 5.88349Z"
+                                fill="#1B1357"
+                              />
+                            </svg>
+                          </button>
+                          <button class="btn-action" name="delete">
                             <svg
                               width="24"
                               height="24"
