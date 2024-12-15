@@ -224,7 +224,10 @@ body {
                 .mini {
                     margin-right: 0;
                     margin-left: 0;
-                    width: 40%;
+                    width: 40%;            
+                }
+                .dates {
+                  background-color: $color-grey-light;
                 }
             }                       
             }

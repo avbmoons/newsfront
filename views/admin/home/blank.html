@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edit_Home_section</title>
+    <title>Edit Home section</title>
     <link rel="stylesheet" href="../../../styles/admin/forms/forms.css">
      <script defer src="../../../scripts/timenow.js"></script>
      <script defer src="../../../scripts/sidebarcolor.js"></script>
@@ -259,52 +259,78 @@
               </div>
             </div>
             <div class="admin-content">
-              <section class="head-block admin">
+              <section class="head-block">
                 <div class="title-block">
                   <div class="title-box">
                     <p class="title">Edit Home section</p>
                   </div>
                 </div>
               </section>
-              <form action="#" class="form-input admin">
-                <div class="input-box first admin" name="title-box">
-                  <label for="title" class="input-lable">Section</label>            
+              <form action="#" class="form-input">
+                <div class="input-box first" name="category">
+                  <label for="category" class="input-lable">Category</label>
+                  <select class="input-text" name="category" id="" >
+                    <option value=""> - - - </option>
+                    <option value="sport">Sport</option>
+                    <option value="politics">Politics</option>
+                    <option value="ecology">Ecology</option>
+                    <option value="economy">Economy</option>
+                    <option value="culture">Culture</option>
+                    <option value="technology">Technology</option>
+                    <option value="auto">Auto</option>
+                    <option value="world">World</option>
+                    <option value="science">Science</option>
+                    <option value="nature">Nature</option>
+                  </select>            
+                </div>
+                <div class="input-box" name="title-box">
+                  <label for="title" class="input-lable">Title</label>            
                   <input type="text" class="input-text" name="title">              
                 </div>
-                <div class="input-box" name="resume-box">
-                    <label for="resume" class="input-lable">Resume</label>            
-                    <input type="text" class="input-text" name="resume">              
+                <div class="input-box" name="source-box">
+                    <label for="source" class="input-lable">Source</label>
+                    <select class="input-text" name="source" id="">
+                        <option value=""> - - - </option>
+                        <option value="1">Supervisor Fire Fighting Worker</option>
+                        <option value="2">Supervisor Correctional Officer</option>
+                        <option value="3">Admin</option>
+                        <option value="4">Door To Door Sales</option>
+                        <option value="5">Legal Secretary</option>
+                        <option value="6">Plate Finisher</option>
+                        <option value="7">Garment</option>
+                        <option value="8">Radiation Therapist</option>
+                        <option value="9">Dental Laboratory Technician</option>
+                        <option value="10">Airfield Operations Specialist</option>
+                    </select>  
                 </div>
-                <div class="input-box" name="description-box">
-                    <label for="description" class="input-lable">Description</label>
-                    <textarea class="input-text area" name="description" id=""></textarea>            
+                <div class="input-box" name="author-box">
+                    <label for="author" class="input-lable">Author</label>            
+                    <input type="text" class="input-text" name="author">              
                 </div>
                 <div class="input-box" name="image-box">
                     <div class="input-group">
-                        <div class="input-box half" name="image-box">
+                        <div class="input-box half">
                             <label for="image" class="input-lable">Image</label>            
                             <input type="file" class="input-text file" name="image" accept="image/*" multiple >
+                            <!-- <span class="input-text file-btn">Download</span>              
+                            <span class="input-text file-text">Download</span> -->
                         </div>
-                        <!-- <div class="input-box mini" name="status-box">
-                            <label for="status" class="input-lable">Status</label>            
-                            <select class="input-text" name="status" id="">
-                                <option value="draft">DRAFT</option>
-                                <option value="active">ACTIVE</option>
-                                <option value="blocked">BLOCKED</option>
-                            </select>              
-                        </div>  -->
                     </div>
+                </div>
+                <div class="input-box" name="description-box">
+                  <label for="description" class="input-lable">Description</label>
+                  <textarea class="input-text area" name="description" id=""></textarea>            
                 </div>
                 <div class="input-box" name="status-box">
                     <div class="input-group">
-                        <div class="input-box mini" name="visibility-box">
+                        <div class="input-box mini">
                             <label for="visibility" class="input-lable">Visibility</label>            
                             <select class="input-text" name="visibility" id="">
                                 <option value="draft">Visible</option>
                                 <option value="active">Invisible</option>
                             </select>              
                         </div> 
-                        <div class="input-box mini" name="status-box">
+                        <div class="input-box mini">
                             <label for="status" class="input-lable">Status</label>            
                             <select class="input-text" name="status" id="">
                                 <option value="draft">DRAFT</option>
@@ -314,18 +340,6 @@
                         </div>                        
                     </div>
 
-                </div>
-                <div class="input-box" name="dates-box">
-                  <div class="input-group">
-                      <div class="input-box mini" name="created-box">
-                          <label for="created" class="input-lable">Created at</label> 
-                          <input type="text" class="input-text dates" name="created" readonly >           
-                      </div> 
-                      <div class="input-box mini" name="updated-box">
-                          <label for="updated" class="input-lable">Updated at</label> 
-                          <input type="text" class="input-text dates" name="updated" readonly >           
-                      </div>                        
-                  </div>
                 </div>
                 <div class="input-box" name="btns-box">
                     <div class="input-group">

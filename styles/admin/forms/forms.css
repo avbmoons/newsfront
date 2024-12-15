@@ -800,6 +800,9 @@ body {
   margin-left: 0;
   width: 40%;
 }
+.wrapper .top main .main-block .admin-content .form-input .input-box .input-group .dates {
+  background-color: #e9e7e0;
+}
 .wrapper .top main .main-block .admin-content .form-input .first {
   margin-top: 40px;
 }
