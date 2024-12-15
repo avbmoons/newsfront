@@ -34,7 +34,7 @@ body {
       margin: 0 auto;
       margin-top: $header-height;
       width: $block-width;
-      height: $min-main-height;
+      min-height: $min-main-height;
       @include flex-vertical();
       justify-content: flex-start;
       background-color: white;
@@ -51,6 +51,52 @@ body {
           .title {
             @include text-font(36px, 400, 36px, 0);
             color: $color-main-dark;
+          }
+        }
+      }
+      .categories-block {
+        margin: 0 auto;
+        margin-bottom: $page-title-height;
+        width: 100%;
+        //min-height: $min-main-height - 2*$page-title-height;
+        height: auto;
+        @include flex-vertical();
+        border: 1px solid red;
+        .categories-box {
+          margin: 0 auto;
+          width: 100%;
+          height: auto; 
+          @include flex-horizontal();
+          flex-wrap: wrap;
+          .category-item {
+            margin: 0 auto;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: fit-content; // 286px; // 23%;
+            height: auto;
+            position: relative;
+            .category-link {
+              width: 100%;
+              height: auto;
+            }
+            .category-title {
+              @include text-font(24px, 600, 24px, 0);
+              color: $color-main-dark;
+              text-transform: uppercase;
+              position: absolute;
+              top: 20px;
+              left: 30px;
+            }
+            .light {
+              color: $color-main;
+            }
+          }
+          .double {
+            width: 48%;
+            img {
+              width: 100%;
+              height: 50%;
+            }
           }
         }
       }

@@ -7,7 +7,7 @@ const categories = [
         created_at: "2024-10-16 08:46:57",
         updated_at: "2024-10-16 08:46:57",
         sstatus: "draft",
-        image: "test1",
+        image: "./../assets/categories/category-1-sport.png",
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const categories = [
         created_at: "2024-10-16 08:46:57",
         updated_at: "2024-10-16 08:46:57",
         sstatus: "active",
-        image: "test1",
+        image: "../../assets/categories/category-2-politics2.png",
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const categories = [
         created_at: "2024-10-16 08:46:57",
         updated_at: "2024-10-16 08:46:57",
         sstatus: "active",
-        image: "test1",
+        image: "../../assets/categories/category-3-ecology.png",
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const categories = [
         created_at: "2024-10-16 08:46:57",
         updated_at: "2024-10-16 08:46:57",
         sstatus: "draft",
-        image: "test1",
+        image: "../../assets/categories/category-4-economy.png",
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ const categories = [
         created_at: "2024-10-16 08:46:57",
         updated_at: "2024-10-16 08:46:57",
         sstatus: "draft",
-        image: "test1",
+        image: "../../assets/categories/category-5-culture.png",
     },
     {
         id: 6,
@@ -57,7 +57,7 @@ const categories = [
         created_at: "2024-10-16 08:46:57",
         updated_at: "2024-10-16 08:46:57",
         sstatus: "draft",
-        image: "test1",
+        image: "../../assets/categories/category-6-technology.png",
     },
     {
         id: 7,
@@ -67,7 +67,7 @@ const categories = [
         created_at: "2024-10-16 08:46:57",
         updated_at: "2024-10-16 08:46:57",
         sstatus: "draft",
-        image: "test1",
+        image: "../../assets/categories/category-7-auto.png",
     },
     {
         id: 8,
@@ -77,7 +77,7 @@ const categories = [
         created_at: "2024-10-16 08:46:57",
         updated_at: "2024-10-16 08:46:57",
         sstatus: "draft",
-        image: "test1",
+        image: "../../assets/categories/category-8-world.png",
     },
     {
         id: 9,
@@ -87,7 +87,7 @@ const categories = [
         created_at: "2024-10-16 08:46:57",
         updated_at: "2024-10-16 08:46:57",
         sstatus: "draft",
-        image: "test1",
+        image: "../../assets/categories/category-9-science.png",
     },
     {
         id: 10,
@@ -107,6 +107,6 @@ const categories = [
         created_at: "2024-10-16 08:46:57",
         updated_at: "2024-10-16 08:46:57",
         sstatus: "draft",
-        image: "test1",
+        image: "../../assets/categories/category-10-nature.png",
     },
 ];
