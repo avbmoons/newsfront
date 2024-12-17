@@ -61,23 +61,29 @@ body {
         //min-height: $min-main-height - 2*$page-title-height;
         height: auto;
         @include flex-vertical();
-        border: 1px solid red;
+        //border: 1px solid red;
         .categories-box {
-          margin: 0 auto;
+          //margin: 0 auto;
+          margin: 0;
           width: 100%;
-          height: auto; 
+          height: auto;
           @include flex-horizontal();
           flex-wrap: wrap;
           .category-item {
             margin: 0 auto;
-            margin-right: 10px;
+            //margin-right: 10px;
+            margin-left: 10px; // 0;
             margin-bottom: 10px;
-            width: fit-content; // 286px; // 23%;
+            width: 23%; // 286px; // fit-content; // 286px; // 23%;
             height: auto;
             position: relative;
             .category-link {
               width: 100%;
               height: auto;
+              img {
+                width: 100%;
+                height: auto;
+              }
             }
             .category-title {
               @include text-font(24px, 600, 24px, 0);
@@ -93,9 +99,14 @@ body {
           }
           .double {
             width: 48%;
-            img {
+            height: 240px;
+            .category-link {
               width: 100%;
-              height: 50%;
+              height: inherit;
+              img {
+                width: 100%;
+                height: inherit; // 50%;
+              }
             }
           }
         }

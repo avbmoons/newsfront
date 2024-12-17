@@ -34,7 +34,7 @@ body {
       margin: 0 auto;
       margin-top: $header-height;
       width: $block-width;
-      height: $min-main-height;
+      min-height: $min-main-height;
       @include flex-vertical();
       justify-content: flex-start;
       background-color: white;
@@ -51,6 +51,97 @@ body {
           .title {
             @include text-font(36px, 400, 36px, 0);
             color: $color-main-dark;
+          }
+        }
+      }
+      .news-block {
+        margin: 0 auto;
+        margin-bottom: $page-title-height;
+        width: 100%;
+        height: fit-content;
+        @include flex-vertical();
+        //border: 1px solid red;
+        .news-items {
+          margin: 0 auto;
+          //margin-left: 0;
+          width: 100%;
+          height: fit-content; // auto;
+          @include flex-horizontal();
+          //justify-content: flex-start;
+          flex-wrap: wrap;
+          .news-item {
+            margin: 0 auto;
+            margin-bottom: 20px;
+            width: 350px; // 388px; // 32%; // 25vw;
+            height: 198px; // 220px; // 21vh;
+            @include flex-horizontal();
+            justify-content: space-between;
+            //flex-wrap: wrap;
+            border: 1px solid $color-grey;
+            border-radius: 3px;
+            .news-info {
+              margin: 0 auto;
+              padding: 10px;
+              max-width: 50%;
+              height: 100%;
+              @include flex-vertical();
+              justify-content: space-between;
+              //border: 3px solid orange;
+              .news-category {
+                width: 100%;
+                font-family: RobotoCondensed;
+                color: #181818; // $color-black;
+                @include text-font(13px, 700, 13px, 0);
+                text-transform: uppercase;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                //white-space: nowrap;
+                overflow: hidden;
+              }
+              .news-title {
+                width: 100%;
+                color: $color-black;
+                @include text-font(16px, 600, 16px, 0);
+              }
+              .news-description {
+                width: 100%;
+                color: $color-black;
+                @include text-font(12px, 300, 12px, 0);
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                //white-space: nowrap;
+                overflow: hidden;
+              }
+              .news-source {
+                width: 100%;
+                color: $color-black;
+                @include text-font(12px, 600, 12px, 0);
+              }
+              .news-created-at {
+                width: 100%;
+                color: $color-black;
+                @include text-font(12px, 300, 12px, 0);
+              }
+            }
+            .news-image {
+              margin: 0 auto;
+              width: auto; // 50%;
+              height: 100%;
+              @include flex-vertical();
+              img {
+                width: auto;
+                height: 100%;
+              }
+            }
+          }
+          .news-item:last-child {
+            margin-bottom: 0;
           }
         }
       }
