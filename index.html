@@ -6,6 +6,8 @@
     <title>N&T_Home</title>
     <!-- <link rel="stylesheet" href="../../styles/layouts/main/main.css" /> -->
     <link rel="stylesheet" href="styles/home/home.css" />
+    <script defer src="data/news.js"></script>
+    <script defer src="scripts/homeNewsList.js"></script>
     <script defer src="scripts/timesite.js"></script>
     <script defer src="scripts/menucolor.js"></script>
   </head>
@@ -25,7 +27,12 @@
                   <div class="service-time">
                     <p id="currentTimeSite"></p>
                   </div>
-                  <button class="service-button" onclick="location.href='views/auth/login.html'">Sign In</button>
+                  <button
+                    class="service-button"
+                    onclick="location.href='views/auth/login.html'"
+                  >
+                    Sign In
+                  </button>
                 </div>
               </div>
             </div>
@@ -34,25 +41,42 @@
             <div class="menu-box">
               <div class="menu">
                 <div class="menu-item-box">
-                  <a href="index.html" id="linkMenuHome" class="menu-item here">Home</a>
+                  <a href="index.html" id="linkMenuHome" class="menu-item here"
+                    >Home</a
+                  >
                 </div>
                 <div class="menu-item-box">
                   <img src="assets/icons/separator.png" alt="" />
                 </div>
                 <div class="menu-item-box">
-                  <a href="views/category/index.html" id="linkMenuCategories" class="menu-item">Categories</a>
+                  <a
+                    href="views/category/index.html"
+                    id="linkMenuCategories"
+                    class="menu-item"
+                    >Categories</a
+                  >
                 </div>
                 <div class="menu-item-box">
                   <img src="assets/icons/separator.png" alt="" />
                 </div>
                 <div class="menu-item-box">
-                  <a href="views/news/index.html" id="linkMenuNews" class="menu-item">All News</a>
+                  <a
+                    href="views/news/index.html"
+                    id="linkMenuNews"
+                    class="menu-item"
+                    >All News</a
+                  >
                 </div>
                 <div class="menu-item-box">
                   <img src="assets/icons/separator.png" alt="" />
                 </div>
                 <div class="menu-item-box">
-                  <a href="views/about.html" id="linkMenuAbout" class="menu-item">About</a>
+                  <a
+                    href="views/about.html"
+                    id="linkMenuAbout"
+                    class="menu-item"
+                    >About</a
+                  >
                 </div>
               </div>
               <div class="menu admin">
@@ -60,7 +84,12 @@
                   <a href="#" class="menu-item">Admin</a>
                 </div> -->
                 <div class="services">
-                  <button class="service-button" onclick="location.href='views/admin/home/index.html'">Admin</button>
+                  <button
+                    class="service-button"
+                    onclick="location.href='views/admin/home/index.html'"
+                  >
+                    Admin
+                  </button>
                 </div>
               </div>
             </div>
@@ -106,6 +135,113 @@
               <p class="title">Welcome to the News&Trends</p>
             </div>
           </section>
+          <section class="news-block">
+            <div class="news-items">
+              <!-- <div class="news-item max" id="news-1">
+                <div class="news-image">
+                  <img src="assets/news/culture-image-2.png" alt="photo" />
+                </div>
+                <div class="news-info">
+                  <p class="news-category" id="newscategory1">
+                    nature, culture, economy, sport
+                  </p>
+                  <p class="news-title">Structural Metal Fabricator</p>
+                  <p class="news-description">
+                    Cumque aperiam quia placeat beatae neque in vitae. Ipsam ut
+                    error voluptatibus saepe dicta facere. Sequi molestias.
+                    Distinctio veniam repellendus at. Sed illo eos neque.
+                  </p>
+                  <div class="news-sources">
+                    <p class="news-source">Legal Secretary</p>
+                    <p class="news-created-at">2024-10-16 08:46:57</p>
+                  </div>
+                </div>
+              </div>
+              <div class="news-item min" id="news-2">
+                <div class="news-image">
+                  <img src="assets/news/technology-image-2.png" alt="photo" />
+                </div>
+                <div class="news-info">
+                  <p class="news-category" id="newscategory1">
+                    nature, culture, economy, sport
+                  </p>
+                  <p class="news-title">Structural Metal Fabricator</p>
+                  <p class="news-description">
+                    Cumque aperiam quia placeat beatae neque in vitae. Ipsam ut
+                    error voluptatibus saepe dicta facere. Sequi molestias.
+                    Distinctio veniam repellendus at. Sed illo eos neque.
+                  </p>
+                  <div class="news-sources">
+                    <p class="news-source">Legal Secretary aperiam</p>
+                    <p class="news-created-at">2024-10-16 08:46:57</p>
+                  </div>
+                </div>
+              </div>
+              <div class="news-item min" id="news-3">
+                <div class="news-image">
+                  <img src="assets/news/politics-image-3.png" alt="photo" />
+                </div>
+                <div class="news-info">
+                  <p class="news-category" id="newscategory1">
+                    nature, culture, economy, sport
+                  </p>
+                  <p class="news-title">Structural Metal Fabricator</p>
+                  <p class="news-description">
+                    Cumque aperiam quia placeat beatae neque in vitae. Ipsam ut
+                    error voluptatibus saepe dicta facere. Sequi molestias.
+                    Distinctio veniam repellendus at. Sed illo eos neque.
+                  </p>
+                  <div class="news-sources">
+                    <p class="news-source">Legal Secretary aperiam</p>
+                    <p class="news-created-at">2024-10-16 08:46:57</p>
+                  </div>
+                </div>
+              </div>
+              <div class="news-item min" id="news-4">
+                <div class="news-image">
+                  <img src="assets/news/ecology-image-2.png" alt="photo" />
+                </div>
+                <div class="news-info">
+                  <p class="news-category" id="newscategory1">
+                    nature, culture, economy, sport
+                  </p>
+                  <p class="news-title">Structural Metal Fabricator</p>
+                  <p class="news-description">
+                    Cumque aperiam quia placeat beatae neque in vitae. Ipsam ut
+                    error voluptatibus saepe dicta facere. Sequi molestias.
+                    Distinctio veniam repellendus at. Sed illo eos neque.
+                  </p>
+                  <div class="news-sources">
+                    <p class="news-source">Legal Secretary aperiam</p>
+                    <p class="news-created-at">2024-10-16 08:46:57</p>
+                  </div>
+                </div>
+              </div>
+              <div class="news-item min" id="news-5">
+                <div class="news-image">
+                  <img src="assets/news/ecology-image-3.png" alt="photo" />
+                </div>
+                <div class="news-info">
+                  <p class="news-category" id="newscategory1">
+                    nature, culture, economy, sport
+                  </p>
+                  <p class="news-title">Structural Metal Fabricator</p>
+                  <p class="news-description">
+                    Cumque aperiam quia placeat beatae neque in vitae. Ipsam ut
+                    error voluptatibus saepe dicta facere. Sequi molestias.
+                    Distinctio veniam repellendus at. Sed illo eos neque.
+                  </p>
+                  <div class="news-sources">
+                    <p class="news-source">Legal Secretary aperiam</p>
+                    <p class="news-created-at">2024-10-16 08:46:57</p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </section>
+          <button class="btn-more" onclick="otherFive(4, 9)">
+            See other five...
+          </button>
         </main>
       </div>
       <footer>
@@ -118,8 +254,18 @@
           <div class="footer-socials"></div>
           <div class="footer-menu">
             <div class="menu-box">
-              <button class="service-button request" onclick="location.href='views/order/index.html'">Export request</button>
-              <button class="service-button"onclick="location.href='views/mail/index.html'">Send message</button>
+              <button
+                class="service-button request"
+                onclick="location.href='views/order/index.html'"
+              >
+                Export request
+              </button>
+              <button
+                class="service-button"
+                onclick="location.href='views/mail/index.html'"
+              >
+                Send message
+              </button>
             </div>
           </div>
         </div>
