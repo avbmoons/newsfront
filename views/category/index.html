@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>N&T_Categories</title>
     <link rel="stylesheet" href="../../styles/categories/categories.css" />
+    <script src="../../data/categories.js"></script>
+    <script defer src="../../scripts/categoryUrl.js"></script>
     <script defer src="../../scripts/timesite.js"></script>
     <script defer src="../../scripts/menucolor.js"></script>
   </head>
@@ -24,7 +26,12 @@
                   <div class="service-time">
                     <p id="currentTimeSite"></p>
                   </div>
-                  <button class="service-button" onclick="location.href='../auth/login.html'">Sign In</button>
+                  <button
+                    class="service-button"
+                    onclick="location.href='../auth/login.html'"
+                  >
+                    Sign In
+                  </button>
                 </div>
               </div>
             </div>
@@ -33,25 +40,39 @@
             <div class="menu-box">
               <div class="menu">
                 <div class="menu-item-box">
-                  <a href="../../index.html" id="linkMenuHome" class="menu-item">Home</a>
+                  <a href="../../index.html" id="linkMenuHome" class="menu-item"
+                    >Home</a
+                  >
                 </div>
                 <div class="menu-item-box">
                   <img src="../../assets/icons/separator.png" alt="" />
                 </div>
                 <div class="menu-item-box">
-                  <a href="../category/index.html" id="linkMenuCategories" class="menu-item here">Categories</a>
+                  <a
+                    href="../category/index.html"
+                    id="linkMenuCategories"
+                    class="menu-item here"
+                    >Categories</a
+                  >
                 </div>
                 <div class="menu-item-box">
                   <img src="../../assets/icons/separator.png" alt="" />
                 </div>
                 <div class="menu-item-box">
-                  <a href="../news/index.html" id="linkMenuNews" class="menu-item">All News</a>
+                  <a
+                    href="../news/index.html"
+                    id="linkMenuNews"
+                    class="menu-item"
+                    >All News</a
+                  >
                 </div>
                 <div class="menu-item-box">
                   <img src="../../assets/icons/separator.png" alt="" />
                 </div>
                 <div class="menu-item-box">
-                  <a href="../about.html" id="linkMenuAbout" class="menu-item">About</a>
+                  <a href="../about.html" id="linkMenuAbout" class="menu-item"
+                    >About</a
+                  >
                 </div>
               </div>
               <div class="menu admin">
@@ -59,7 +80,12 @@
                   <a href="#" class="menu-item">Admin</a>
                 </div> -->
                 <div class="services">
-                  <button class="service-button" onclick="location.href='../admin/home/index.html'">Admin</button>
+                  <button
+                    class="service-button"
+                    onclick="location.href='../admin/home/index.html'"
+                  >
+                    Admin
+                  </button>
                 </div>
               </div>
             </div>
@@ -107,44 +133,84 @@
           </section>
           <section class="categories-block">
             <div class="categories-box">
-              <div class="category-item">
-                <a href="#" class="category-link"><img src="../../assets/categories/category-1-sport.png" alt=""></a>
+              <div class="category-item" id="category1">
+                <a href="show.html?id=" class="category-link" id="link1"
+                  ><img
+                    src="../../assets/categories/category-1-sport.png"
+                    alt=""
+                /></a>
                 <p class="category-title">Sport</p>
               </div>
-              <div class="category-item">
-                <a href="#" class="category-link"><img src="../../assets/categories/category-2-politics2.png" alt=""></a>
+              <div class="category-item" id="category2">
+                <a href="show.html" class="category-link" id="link2"
+                  ><img
+                    src="../../assets/categories/category-2-politics2.png"
+                    alt=""
+                /></a>
                 <p class="category-title light">Politics</p>
               </div>
-              <div class="category-item">
-                <a href="#" class="category-link"><img src="../../assets/categories/category-3-ecology.png" alt=""></a>
+              <div class="category-item" id="category3">
+                <a href="show.html" class="category-link" id="link3"
+                  ><img
+                    src="../../assets/categories/category-3-ecology.png"
+                    alt=""
+                /></a>
                 <p class="category-title">Ecology</p>
               </div>
-              <div class="category-item">
-                <a href="#" class="category-link"><img src="../../assets/categories/category-4-economy.png" alt=""></a>
+              <div class="category-item" id="category4">
+                <a href="show.html" class="category-link" id="link4"
+                  ><img
+                    src="../../assets/categories/category-4-economy.png"
+                    alt=""
+                /></a>
                 <p class="category-title light">Economy</p>
               </div>
-              <div class="category-item">
-                <a href="#" class="category-link"><img src="../../assets/categories/category-5-culture.png" alt=""></a>
+              <div class="category-item" id="category5">
+                <a href="show.html" class="category-link" id="link5"
+                  ><img
+                    src="../../assets/categories/category-5-culture.png"
+                    alt=""
+                /></a>
                 <p class="category-title">Culture</p>
               </div>
-              <div class="category-item">
-                <a href="#" class="category-link"><img src="../../assets/categories/category-6-technology.png" alt=""></a>
+              <div class="category-item" id="category6">
+                <a href="show.html" class="category-link" id="link6"
+                  ><img
+                    src="../../assets/categories/category-6-technology.png"
+                    alt=""
+                /></a>
                 <p class="category-title">Technology</p>
               </div>
-              <div class="category-item">
-                <a href="#" class="category-link"><img src="../../assets/categories/category-7-auto.png" alt=""></a>
+              <div class="category-item" id="category7">
+                <a href="show.html" class="category-link" id="link7"
+                  ><img
+                    src="../../assets/categories/category-7-auto.png"
+                    alt=""
+                /></a>
                 <p class="category-title light">Auto</p>
               </div>
-              <div class="category-item">
-                <a href="#" class="category-link"><img src="../../assets/categories/category-8-world.png" alt=""></a>
+              <div class="category-item" id="category8">
+                <a href="show.html" class="category-link" id="link8"
+                  ><img
+                    src="../../assets/categories/category-8-world.png"
+                    alt=""
+                /></a>
                 <p class="category-title">World</p>
               </div>
-              <div class="category-item double">
-                <a href="#" class="category-link"><img src="../../assets/categories/category-9-science.png" alt=""></a>
+              <div class="category-item double" id="category9">
+                <a href="show.html" class="category-link" id="link9"
+                  ><img
+                    src="../../assets/categories/category-9-science.png"
+                    alt=""
+                /></a>
                 <p class="category-title light">Science</p>
               </div>
-              <div class="category-item double">
-                <a href="#" class="category-link"><img src="../../assets/categories/category-10-nature.png" alt=""></a>
+              <div class="category-item double" id="category10">
+                <a href="show.html" class="category-link" id="link10"
+                  ><img
+                    src="../../assets/categories/category-10-nature.png"
+                    alt=""
+                /></a>
                 <p class="category-title">Nature</p>
               </div>
             </div>
@@ -161,8 +227,18 @@
           <div class="footer-socials"></div>
           <div class="footer-menu">
             <div class="menu-box">
-              <button class="service-button request" onclick="location.href='../order/index.html'">Export request</button>
-              <button class="service-button" onclick="location.href='../mail/index.html'">Send message</button>
+              <button
+                class="service-button request"
+                onclick="location.href='../order/index.html'"
+              >
+                Export request
+              </button>
+              <button
+                class="service-button"
+                onclick="location.href='../mail/index.html'"
+              >
+                Send message
+              </button>
             </div>
           </div>
         </div>

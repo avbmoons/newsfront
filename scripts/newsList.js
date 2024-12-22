@@ -28,7 +28,7 @@ class NewsItem {
       <p class="news-category" id="newscategory${this.id}">
         ${this.category_id}
       </p>
-      <p class="news-title">${this.title}</p>
+      <a href="./show.html?id=" class="news-link" id="news${this.id}" ><p class="news-title">${this.title}</p></a>
       <p class="news-description">${this.description}</p>
       <p class="news-source">${this.source_id}</p>
       <p class="news-created-at">${this.created_at}</p>

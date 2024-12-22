@@ -1,6 +1,5 @@
 @use 'sass:math';
 
-//@import '../../vars/vars.scss';
 @import '../vars/vars.scss';
 @import '../components/header/header.scss';
 @import '../components/footer/footer.scss';
@@ -49,7 +48,7 @@ body {
           height: fit-content;
           @include flex-horizontal();
           .title {
-            @include text-font(36px, 400, 36px, 0);
+            @include text-font(28px, 400, 28px, 0);
             color: $color-main-dark;
           }
           .page-title {
@@ -63,88 +62,102 @@ body {
         margin: 0 auto;
         margin-bottom: $page-title-height;
         width: 100%;
-        height: fit-content;
+        height: auto; // fit-content;
         @include flex-vertical();
         //border: 1px solid red;
         .news-items {
           margin: 0 auto;
           //margin-left: 0;
           width: 100%;
-          height: fit-content; // auto;
+          height: auto; // fit-content; // auto;
           @include flex-horizontal();
           //justify-content: flex-start;
           flex-wrap: wrap;
           .news-item {
             margin: 0 auto;
             margin-bottom: 20px;
-            width: 350px; // 388px; // 32%; // 25vw;
-            height: 198px; // 220px; // 21vh;
+            width: $block-width;
+            min-height: 60vh;
             @include flex-horizontal();
             justify-content: space-between;
-            //flex-wrap: wrap;
-            border: 1px solid $color-grey;
             border-radius: 3px;
             .news-info {
               margin: 0 auto;
-              padding: 10px;
-              max-width: 50%;
+              padding: 0;
+              width: 100%;
               height: 100%;
               @include flex-vertical();
               justify-content: space-between;
-              //border: 3px solid orange;
-              .news-category {
-                width: 100%;
-                font-family: RobotoCondensed;
-                color: #181818; // $color-black;
-                @include text-font(13px, 700, 13px, 0);
-                text-transform: uppercase;
-                -webkit-line-clamp: 2;
-                line-clamp: 2;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                text-overflow: ellipsis;
-                //white-space: nowrap;
-                overflow: hidden;
-              }
-              .news-link {
+              position: relative;
+              a {
                 text-decoration: none;
               }
               .news-title {
+                margin-bottom: 20px;
                 width: 100%;
                 color: $color-black;
-                @include text-font(16px, 600, 16px, 0);
+                @include text-font(18px, 600, 18px, 0);
+              }
+              .news-image-float {
+                margin: 0 20px 12px 0;
+                width: 0.3 * $block-width; // auto;
+                height: 40vh; // 100%;
+                float: left;
+                object-fit: cover;
+                //display: block;
               }
               .news-description {
                 width: 100%;
                 color: $color-black;
                 @include text-font(12px, 300, 12px, 0);
-                -webkit-line-clamp: 3;
-                line-clamp: 3;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                text-overflow: ellipsis;
-                //white-space: nowrap;
-                overflow: hidden;
+                text-align: justify;
               }
-              .news-source {
-                width: 100%;
-                color: $color-black;
-                @include text-font(12px, 600, 12px, 0);
-              }
-              .news-created-at {
-                width: 100%;
-                color: $color-black;
-                @include text-font(12px, 300, 12px, 0);
+              .news-sources {
+                margin-bottom: 16px;
+                width: 100%; // 100%;
+                @include flex-horizontal();
+                justify-content: space-between;
+                //border: 1px solid red;
+                .news-author {
+                  width: 50%; // 100%;
+                  color: $color-black;
+                  @include text-font(14px, 600, 14px, 0);
+                  text-align: left;
+                }
+                .news-created-at {
+                  width: 50%; // 100%;
+                  color: $color-black;
+                  @include text-font(14px, 300, 14px, 0);
+                  text-align: right;
+                }
+                .news-category {
+                  width: 50%; // 100%;
+                  font-family: RobotoCondensed;
+                  color: #181818;
+                  @include text-font(16px, 600, 16px, 0);
+                  text-transform: uppercase;
+                  text-align: right;
+                }
+                .news-source {
+                  width: 50%; // 100%;
+                  color: $color-black;
+                  @include text-font(16px, 600, 16px, 0);
+                }
               }
             }
             .news-image {
               margin: 0 auto;
+              margin-left: 0;
               width: auto; // 50%;
-              height: 100%;
+              height: 60vh; // 100%;
               @include flex-vertical();
+              order: 1;
+              float: right;
+              display: none;
               img {
                 width: auto;
                 height: 100%;
+                object-fit: cover;
               }
             }
           }

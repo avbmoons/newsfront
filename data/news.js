@@ -1,9 +1,9 @@
 const news = [
   {
     id: 1,
-    title: 'Logging Equipment Operator',
+    title: '1 Logging Equipment Operator',
     description:
-      'Distinctio veniam repellendus at. Sed illo eos neque voluptatum. Illo eum earum ut sequi molestias.',
+      'Morbi convallis fermentum iaculis. Maecenas pretium risus non sapien venenatis, id rutrum neque luctus. Nunc aliquet, lectus sit amet bibendum accumsan, lacus turpis pretium sem, eget molestie augue justo vitae nunc. Vestibulum vehicula volutpat viverra. Nullam pretium orci ac libero congue, id aliquam quam ullamcorper. Donec ultrices felis felis, quis suscipit augue vestibulum eget. Cras nec vulputate enim. Proin erat risus, porta et placerat quis, dapibus at turpis. Etiam a dolor hendrerit, blandit nulla sit amet, malesuada sapien. Vestibulum iaculis eu magna consequat dignissim. Cras vehicula lorem in lectus sodales semper. Phasellus dictum metus eu lorem lobortis, a tempor neque lobortis. Nam sodales finibus sapien, sed feugiat leo rutrum quis. Etiam accumsan nibh nec massa maximus tristique. Curabitur euismod dolor at sodales sodales. Quisque malesuada, nunc ac condimentum semper, urna nulla molestie risus, ut accumsan orci lorem a purus. Sed ac eros orci. Duis ut dapibus metus. Etiam dapibus eget ligula eget venenatis. Nullam rutrum euismod elit. Proin elementum ac diam ultrices venenatis. Donec ullamcorper, odio nec euismod venenatis, diam nisl commodo sem, eget rhoncus nulla mauris sed libero. Morbi pellentesque maximus velit, sit amet egestas ante tempor ut. Fusce vehicula posuere mi, vel semper nulla sollicitudin sed. Duis mattis viverra tempus. Nunc et augue sed justo aliquet porttitor. Sed id nisl sagittis quam volutpat maximus sed at elit. Aliquam et mauris sed libero imperdiet blandit et non augue. Quisque eleifend mi in mi varius, convallis tristique augue sodales. Sed non imperdiet justo. Quisque tristique turpis sed mauris sollicitudin, interdum imperdiet ligula rhoncus. Morbi consequat magna mauris, at semper purus tincidunt sit amet. Aenean mollis enim sit amet nisl fringilla mattis. Nullam tristique enim ut malesuada pellentesque. Ut hendrerit ligula non sem pellentesque, porttitor molestie arcu dapibus. Etiam sollicitudin lacus eu mauris efficitur, sit amet consectetur orci maximus. Morbi ultricies molestie placerat. Duis vitae vestibulum arcu. Suspendisse id commodo nisl. Suspendisse suscipit lacus in massa iaculis ornare. Quisque aliquam, arcu sit amet posuere lobortis, sapien tellus interdum metus, non porta mauris massa euismod quam. Aliquam erat volutpat. Praesent interdum ultrices hendrerit. Sed placerat sagittis tincidunt. Fusce ipsum mi, accumsan quis auctor in, tristique interdum elit. Cras sodales, orci eu luctus scelerisque, nisl sapien consectetur tellus, non feugiat tortor metus et diam. Nullam vulputate odio dui, molestie pellentesque mauris egestas sed. Maecenas ligula sem, porttitor sed enim eget, interdum accumsan nulla. Duis facilisis bibendum ligula, eget cursus quam iaculis ornare. Duis blandit sem sit amet porta pharetra. In vulputate mi eu mi luctus consequat. Integer cursus, lorem quis fermentum egestas, orci diam blandit nisl, et luctus enim purus sit amet mi. Duis hendrerit quam sit amet purus finibus, sit amet interdum diam consectetur. Nam sagittis ipsum eros, eget finibus lectus tristique ut. Nam a tincidunt velit, quis bibendum orci. In vitae sodales ante. Etiam eu commodo elit, nec tempor velit. Sed sapien erat, suscipit vel nulla non, suscipit pharetra velit. Etiam maximus convallis ligula in eleifend. Morbi a facilisis magna. Cras blandit, mauris ac mollis dignissim, ipsum ligula blandit velit, ultricies cursus dui dui eu lectus. Sed maximus elit non nunc sodales ultrices. In rhoncus massa lorem, nec auctor justo scelerisque eget. In enim elit, finibus in cursus vitae, accumsan vel mi. Duis lobortis eros neque, et viverra elit porta eu. Duis libero risus, facilisis a quam placerat, finibus hendrerit diam.',
     author: 'feil.oceane',
     sstatus: 'active',
     created_at: '2024-10-16 08:46:57',
@@ -14,7 +14,7 @@ const news = [
   },
   {
     id: 2,
-    title: 'Pantograph Engraver',
+    title: '2 Pantograph Engraver',
     description:
       'Saepe quibusdam doloribus et dolorem adipisci. Optio explicabo illum dolorem repudiandae quia.',
     author: 'wschroeder',
@@ -27,7 +27,7 @@ const news = [
   },
   {
     id: 3,
-    title: 'Structural Metal Fabricator',
+    title: '3 Structural Metal Fabricator',
     description:
       'Cumque aperiam quia placeat beatae neque in vitae. Ipsam ut error voluptatibus saepe dicta facere.',
     author: 'gilbert48',
@@ -40,7 +40,7 @@ const news = [
   },
   {
     id: 4,
-    title: 'Stationary Engineer',
+    title: '4 Stationary Engineer',
     description:
       'Nihil tempora quis libero qui quod. Vel nisi omnis accusamus. Maxime est quibusdam sit quo est.',
     author: 'gudrun.little',
@@ -53,7 +53,7 @@ const news = [
   },
   {
     id: 5,
-    title: 'Market Research Analyst',
+    title: '5 Market Research Analyst',
     description:
       'Praesentium magnam nesciunt qui quae expedita. Sed sed sed voluptatem rem qui totam doloribus et.',
     author: 'reilly42',
@@ -66,7 +66,7 @@ const news = [
   },
   {
     id: 6,
-    title: 'Forging Machine Setter',
+    title: '6 Forging Machine Setter',
     description:
       'Ut eum qui eos et pariatur et nulla. A eos in quis nam expedita similique quo.',
     author: 'hilpert.leta',
@@ -79,7 +79,7 @@ const news = [
   },
   {
     id: 7,
-    title: 'Answering Service',
+    title: '7 Answering Service',
     description:
       'Dolores tempore sint laborum neque autem nostrum sed. Non aut hic accusantium.',
     author: 'fay.pollich',
@@ -92,7 +92,7 @@ const news = [
   },
   {
     id: 8,
-    title: 'Product Promoter',
+    title: '8 Product Promoter',
     description:
       'Temporibus optio placeat molestiae ducimus. Ut sunt iusto ea perspiciatis.',
     author: 'blanda.hayley',
@@ -105,7 +105,7 @@ const news = [
   },
   {
     id: 9,
-    title: 'Supervisor of Customer Service',
+    title: '9 Supervisor of Customer Service',
     description:
       'Aliquam soluta rem ad numquam. Eligendi officiis labore fuga sit.',
     author: 'jeff83',
@@ -118,7 +118,7 @@ const news = [
   },
   {
     id: 10,
-    title: 'Pharmacist',
+    title: '10 Pharmacist',
     description:
       'Porro sequi quia autem. Quo quo illo et ut rerum eum. Autem aspernatur a ab voluptate.',
     author: 'pconn',
@@ -126,12 +126,12 @@ const news = [
     created_at: '2024-10-16 08:46:57',
     updated_at: '2024-10-16 08:46:57',
     source_id: 'Garment',
-    category_id: 'technology, science',
+    category_id: 'technology, science, world',
     image: '../../assets/news/technology-image-1.png',
   },
   {
     id: 11,
-    title: 'Airfield Operations Specialist',
+    title: '11 Airfield Operations Specialist',
     description:
       'Harum qui blanditiis omnis culpa. Similique praesentium est et aut.',
     author: 'jeff83.pconn',
@@ -141,5 +141,70 @@ const news = [
     source_id: 'Door To Door Sales',
     category_id: 'auto, nature',
     image: '../../assets/news/auto-image-1.png',
+  },
+  {
+    id: 12,
+    title: '12 Pharmacist',
+    description:
+      'Porro sequi quia autem. Quo quo illo et ut rerum eum. Autem aspernatur a ab voluptate.',
+    author: 'pconn',
+    sstatus: 'draft',
+    created_at: '2024-10-16 08:46:57',
+    updated_at: '2024-10-16 08:46:57',
+    source_id: 'Garment',
+    category_id: 'technology, science',
+    image: '../../assets/news/technology-image-2.png',
+  },
+  {
+    id: 13,
+    title: '13 Supervisor of Customer Service',
+    description:
+      'Aliquam soluta rem ad numquam. Eligendi officiis labore fuga sit.',
+    author: 'jeff83',
+    sstatus: 'draft',
+    created_at: '2024-10-16 08:46:57',
+    updated_at: '2024-10-16 08:46:57',
+    source_id: 'Radiation Therapist',
+    category_id: 'ecology, culture, technology',
+    image: '../../assets/news/ecology-image-3.png',
+  },
+  {
+    id: 14,
+    title: '14 Market Research Analyst',
+    description:
+      'Praesentium magnam nesciunt qui quae expedita. Sed sed sed voluptatem rem qui totam doloribus et.',
+    author: 'reilly42',
+    sstatus: 'draft',
+    created_at: '2024-10-16 08:46:57',
+    updated_at: '2024-10-16 08:46:57',
+    source_id: 'Supervisor Correctional Officer',
+    category_id: 'politics, auto',
+    image: '../../assets/news/politics-image-2.png',
+  },
+  {
+    id: 15,
+    title: '15 Forging Machine Setter',
+    description:
+      'Ut eum qui eos et pariatur et nulla. A eos in quis nam expedita similique quo.',
+    author: 'hilpert.leta',
+    sstatus: 'draft',
+    created_at: '2024-10-16 08:46:57',
+    updated_at: '2024-10-16 08:46:57',
+    source_id: 'Legal Secretary',
+    category_id: 'ecology, sport',
+    image: '../../assets/news/ecology-image-3.png',
+  },
+  {
+    id: 16,
+    title: '16 Answering Service',
+    description:
+      'Dolores tempore sint laborum neque autem nostrum sed. Non aut hic accusantium.',
+    author: 'fay.pollich',
+    sstatus: 'draft',
+    created_at: '2024-10-16 08:46:57',
+    updated_at: '2024-10-16 08:46:57',
+    source_id: 'Dental Laboratory Technician',
+    category_id: 'sport',
+    image: '../../assets/news/sport-image-4.png',
   },
 ];

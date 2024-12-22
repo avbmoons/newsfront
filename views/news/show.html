@@ -1,11 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    тут страница для просмотра выбранной новости
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News&Trends</title>
+    <link rel="stylesheet" href="../../styles/newscard/newscard.css" />
+    <script src="../../data/news.js"></script>
+    <script defer src="../../scripts/newsShow.js"></script>
+    <script defer src="../../scripts/categorycolor.js"></script>
+    <script defer src="../../scripts/timesite.js"></script>
+    <script defer src="../../scripts/menucolor.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top">
+        <header>
+          <div class="header-block">
+            <div class="header-box">
+              <div class="header-logo-box">
+                <div class="header-logo">
+                  <img src="../../assets/logo/logo.png" alt="logo" />
+                </div>
+              </div>
+              <div class="services-box">
+                <div class="services">
+                  <div class="service-time">
+                    <p id="currentTimeSite"></p>
+                  </div>
+                  <button
+                    class="service-button"
+                    onclick="location.href='../auth/login.html'"
+                  >
+                    Sign In
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-block">
+            <div class="menu-box">
+              <div class="menu">
+                <div class="menu-item-box">
+                  <a href="../../index.html" id="linkMenuHome" class="menu-item"
+                    >Home</a
+                  >
+                </div>
+                <div class="menu-item-box">
+                  <img src="../../assets/icons/separator.png" alt="" />
+                </div>
+                <div class="menu-item-box">
+                  <a
+                    href="../category/index.html"
+                    id="linkMenuCategories"
+                    class="menu-item here"
+                    >Categories</a
+                  >
+                </div>
+                <div class="menu-item-box">
+                  <img src="../../assets/icons/separator.png" alt="" />
+                </div>
+                <div class="menu-item-box">
+                  <a
+                    href="../news/index.html"
+                    id="linkMenuNews"
+                    class="menu-item"
+                    >All News</a
+                  >
+                </div>
+                <div class="menu-item-box">
+                  <img src="../../assets/icons/separator.png" alt="" />
+                </div>
+                <div class="menu-item-box">
+                  <a href="../about.html" id="linkMenuAbout" class="menu-item"
+                    >About</a
+                  >
+                </div>
+              </div>
+              <div class="menu admin">
+                <!-- <div class="menu-item-box">
+                      <a href="#" class="menu-item">Admin</a>
+                    </div> -->
+                <div class="services">
+                  <button
+                    class="service-button"
+                    onclick="location.href='../admin/home/index.html'"
+                  >
+                    Admin
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="categories-block">
+            <div class="categories-box">
+              <div class="category-item-box">
+                <a href="#" class="category-item">Sport</a>
+              </div>
+              <div class="category-item-box">
+                <a href="#" class="category-item">Politics</a>
+              </div>
+              <div class="category-item-box">
+                <a href="#" class="category-item">Ecology</a>
+              </div>
+              <div class="category-item-box">
+                <a href="#" class="category-item">Economy</a>
+              </div>
+              <div class="category-item-box">
+                <a href="#" class="category-item">Culture</a>
+              </div>
+              <div class="category-item-box">
+                <a href="#" class="category-item">Technology</a>
+              </div>
+              <div class="category-item-box">
+                <a href="#" class="category-item">Auto</a>
+              </div>
+              <div class="category-item-box">
+                <a href="#" class="category-item">World</a>
+              </div>
+              <div class="category-item-box">
+                <a href="#" class="category-item">Science</a>
+              </div>
+              <div class="category-item-box">
+                <a href="#" class="category-item">Nature</a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main>
+          <section class="title-block">
+            <div class="title-box">
+              <p class="page-title" id="pageTitle">Page Title</p>
+            </div>
+          </section>
+          <section class="news-block">
+            <div class="news-items">
+              <div class="news-item" id="news-1">
+                <div class="news-info">
+                  <div class="news-sources">
+                    <p class="news-source" id="newsSource">
+                      Supervisor Correctional Officer
+                    </p>
+                    <p class="news-category" id="newsCategory">
+                      economy, nature, politics
+                    </p>
+                  </div>
+
+                  <div class="news-sources">
+                    <p class="news-author" id="newsAuthor">by feil.oceane</p>
+                    <p class="news-created-at" id="newsCreatedAt">
+                      2024-10-16 08:46:57
+                    </p>
+                  </div>
+
+                  <!-- <p class="news-title" id="newsTitle">
+                    1 Logging Equipment Operator Equipment Operator Equipment
+                    Operator
+                  </p> -->
+                  <p class="news-description" id="newsDescription">
+                    <!-- <img
+                      class="news-image-float"
+                      id="newsImage"
+                      src="../../assets/news/economy-image-1.png"
+                      alt="photo"
+                    /> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer>
+        <div class="footer-block">
+          <div class="footer-contacts">
+            <div class="footer-logo">
+              <img src="../../assets/logo/logo-white.png" alt="logo" />
+            </div>
+          </div>
+          <div class="footer-socials"></div>
+          <div class="footer-menu">
+            <div class="menu-box">
+              <button
+                class="service-button request"
+                onclick="location.href='../order/index.html'"
+              >
+                Export request
+              </button>
+              <button
+                class="service-button"
+                onclick="location.href='../mail/index.html'"
+              >
+                Send message
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyrights">
+            <p>&#169; All rights reserved</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
