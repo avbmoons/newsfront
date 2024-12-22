@@ -711,7 +711,7 @@ body {
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: relative;
 }
 .wrapper .top main .news-block .news-items .news-item .news-info a {

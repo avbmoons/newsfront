@@ -123,7 +123,7 @@ body {
               }
               .news-title {
                 width: 100%;
-                color: red; // $color-black;
+                color: $color-black;
                 @include text-font(16px, 600, 16px, 0);
                 text-decoration: none;
               }
@@ -204,7 +204,7 @@ body {
             .news-image {
               width: 100%;
               height: 75%; // 67%;
-              //object-fit: cover;
+              object-fit: cover;
               //border: 2px solid green;
               img {
                 //width: 100%; // auto;
@@ -222,9 +222,9 @@ body {
               .news-link {
                 text-decoration: none;
               }
-              .news-title {
-                color: red;
-              }
+              // .news-title {
+              //   color: red;
+              // }
               .news-description {
                 -webkit-line-clamp: 2;
                 line-clamp: 2;
@@ -250,10 +250,11 @@ body {
               }
               .news-link {
                 text-decoration: none;
-              }
-              .news-title {
                 order: 3;
               }
+              // .news-title {
+              //   order: 3;
+              // }
               .news-description {
                 margin-top: 5px;
                 -webkit-line-clamp: 2;

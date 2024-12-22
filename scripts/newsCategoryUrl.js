@@ -1,4 +1,4 @@
-//let data = news;
+//let data1 = news;
 
 //console.log(data);
 let arrNews = document.querySelectorAll('.news-link');
@@ -8,6 +8,6 @@ arrNews.forEach((arrNews) => {
   let el = arrNews.id;
   let numEl = parseInt(el.match(/\d+/));
   //console.log(numEl);
-  arrNews.href = './show.html?id=' + numEl;
+  arrNews.href = '../news/show.html?id=' + numEl;
   //console.log(arrNews.href);
 });

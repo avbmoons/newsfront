@@ -33,7 +33,8 @@ body {
       margin: 0 auto;
       margin-top: $header-height;
       width: $block-width;
-      height: $min-main-height;
+      min-height: $min-main-height;
+      height: auto;
       @include flex-vertical();
       justify-content: flex-start;
       background-color: white;
@@ -52,6 +53,113 @@ body {
             color: $color-main-dark;
           }
         }
+      }
+      .section-block {
+        margin: 0 auto;
+        width: $block-width;
+        height: 50vh; // $min-main-height - $page-title-height;
+        @include flex-vertical();
+        justify-content: flex-start;
+        //border: 1px solid red;
+        .section-box {
+          margin: 0 auto;
+          width: 100%;
+          height: 100%; //50vh;
+          @include flex-horizontal();
+          justify-content: space-between;
+          .image-box {
+            margin: 0;
+            width:35%;  // 40%; // 35%;
+            height: 100%;
+            @include flex-vertical();
+            .section-image {
+              margin: 0;
+              width: auto;
+              height: 100%;
+              object-fit: cover;
+            }
+
+          }
+          .content-box {
+            margin: 0 auto;
+            margin-right: 0;
+            width: 60%;
+            height: 100%;
+            @include flex-vertical();
+            justify-content: space-evenly;
+            //border: 2px solid orange;
+            .section-title {
+              width: 100%;
+              height: fit-content;
+              @include text-font(20px, 600, 20px, 0);
+              color: $color-black;
+            }
+            .section-resume {
+              width: 100%;
+              height: fit-content;
+              @include text-font(16px, 300, 16px, 0);
+              color: $color-black;
+            }
+            .section-description {
+              width: 100%;
+              height: fit-content;
+              @include text-font(16px, 300, 16px, 0);
+              color: $color-black;
+            }
+            .contact-box {
+              margin: 0 auto;
+              width: 100%;
+              height: fit-content;
+              @include flex-horizontal();
+              justify-content: space-evenly;
+              .contact-icon {
+                width: auto;
+                height: fit-content;
+              }
+              .contact-text {
+                width: 60%;
+                @include text-font(16px, 300, 16px, 0);
+                color: $color-basic-black;
+                text-align: left;
+              }
+              .socials {
+                width: 60%;
+                @include flex-horizontal();
+                justify-content: flex-start;
+                //border: 2px solid orangered;
+                img {
+                  margin-right: 20px;
+                }
+              }
+              .title {
+                width: fit-content;
+                font-weight: 600;
+                color: $color-main-dark;
+                align-items: start;
+              }
+            }
+          
+          }
+          .max {
+            width: 65%; // 60%;
+            height: 20vh;
+            img {
+              height: 100%;
+            }
+          }          
+          .min {
+            margin: 0;
+            padding: 20px;
+            width:35%;  // 40%;
+            height: 20vh;
+            //border: 2px solid orange;
+          }  
+        }
+      }
+      .half {
+        margin-bottom: 40px;
+        height: 20vh;
+        //border: 3px solid green
       }
     }
   }

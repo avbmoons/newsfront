@@ -31,7 +31,7 @@ class NewsItemMax {
       <p class="news-category" id="newscategory${this.id}">
         ${this.category_id}
       </p>
-      <a href="views/news/show.html?id=" class="news-link" id="news${this.id}><p class="news-title">${this.title}</p></a>
+      <a href="views/news/show.html?id=" class="news-link" id="news${this.id}" ><p class="news-title">${this.title}</p></a>
       <p class="news-description">
         ${this.description}
       </p>
@@ -77,7 +77,7 @@ class NewsItemMin {
         <p class="news-category" id="newscategory${this.id}">
           ${this.category_id}
         </p>
-        <a href="views/news/show.html?id=" class="news-link" id="news${this.id}><p class="news-title">${this.title}</p></a>
+        <a href="views/news/show.html?id=" class="news-link" id="news${this.id}" ><p class="news-title">${this.title}</p></a>
         <p class="news-description">
           ${this.description}
         </p>
@@ -212,6 +212,8 @@ function otherFive(start, end, itemsId) {
   let lastItemsId = lastItems.getAttribute('id');
   console.log('lastItemsId' + ' ' + lastItemsId);
   itemsId = lastItemsId;
+
+  newsUrl();
 
   //   let btnBlock = document.querySelector('.btn-block');
   //   let btnMore = document.createElement('button');
