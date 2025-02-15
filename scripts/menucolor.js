@@ -10,6 +10,8 @@ const menuAbout = document.getElementById('linkMenuAbout');
 const isCategories = currentUrl.indexOf('category');
 const isNews = currentUrl.indexOf('news/');
 const isAbout = currentUrl.indexOf('about');
+const isMail = currentUrl.indexOf('mail');
+const isOrder = currentUrl.indexOf('order');
 
 if (isCategories > 0) {
     console.log("this page is Categories");

@@ -103,7 +103,7 @@ body {
             .section-description {
               width: 100%;
               height: fit-content;
-              @include text-font(16px, 300, 16px, 0);
+              @include text-font(16px, 300, 22px, 0);
               color: $color-black;
             }
             .contact-box {

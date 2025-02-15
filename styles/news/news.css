@@ -742,6 +742,12 @@ body {
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .wrapper .top main .news-block .news-items .news-item .news-info .news-description {
   width: 100%;
@@ -776,6 +782,7 @@ body {
 .wrapper .top main .news-block .news-items .news-item .news-image {
   margin: 0 auto;
   width: auto;
+  max-width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -785,6 +792,8 @@ body {
 .wrapper .top main .news-block .news-items .news-item .news-image img {
   width: auto;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .wrapper .top main .news-block .news-items .news-item:last-child {
   margin-bottom: 0;

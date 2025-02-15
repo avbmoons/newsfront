@@ -1,9 +1,9 @@
 const abouts = [
     {
         id: 1,
-        title: "Substance Abuse Social Worker",
-        resume: "Laudantium cupiditate sit ratione.",
-        description: "Dignissimos voluptate pariatur atque et molestias omnis qui aliquid. Itaque occaecati deleniti odio. Nobis et est nemo consequatur. Culpa numquam autem sint magnam aliquam et.",
+        title: "What we do for you",
+        resume: "We collect the most interesting, favorite and important news.",
+        description: "We collect for you on our website all the most interesting, beloved and important things in the world. You can find out the news in real time. We support feeds in categories such as sports, ecology, science, technology, culture, nature and ecology, as well as the most important news from the world of politics and economics.",
         is_visible: 1,
         sstatus: "active",
         created_at: "2024-10-16 08:46:57",
@@ -12,9 +12,9 @@ const abouts = [
     },
     {
         id: 2,
-        title: "Talent Acquisition Manager",
-        resume: "Et consectetur enim consequuntur inventore ut.",
-        description: "Enim aperiam sapiente fugit. Aut ut occaecati qui nam recusandae. Sit velit modi esse ad corrupti explicabo.",
+        title: "Что мы делаем для вас",
+        resume: "Мы собираем самые интересные, любимые и важные новости.",
+        description: "Мы собираем для вас на нашем сайте все самое  интересное, любимое и важное в мире. Вы можете узнавать новости в реальном времени. Мы поддерживаем ленты в таких категориях, как спорт, экология, наука, технологии, культура, природа и экология, а также самые важные новости из мира политики и экономики.",
         is_visible: 1,
         sstatus: "active",
         created_at: "2024-10-16 08:46:57",

@@ -109,8 +109,10 @@ body {
               .news-description {
                 width: 100%;
                 color: $color-black;
-                @include text-font(12px, 300, 12px, 0);
+                @include text-font(12px, 300, 18px, 0);
                 text-align: justify;
+                white-space: pre-wrap;
+                //display: inline-block;
               }
               .news-sources {
                 margin-bottom: 16px;

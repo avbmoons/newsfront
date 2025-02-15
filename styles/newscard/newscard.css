@@ -739,9 +739,10 @@ body {
   color: #181818;
   font-size: 12px;
   font-weight: 300;
-  line-height: 12px;
+  line-height: 18px;
   letter-spacing: 0;
   text-align: justify;
+  white-space: pre-wrap;
 }
 .wrapper .top main .news-block .news-items .news-item .news-info .news-sources {
   margin-bottom: 16px;

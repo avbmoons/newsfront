@@ -113,6 +113,13 @@ body {
                 width: 100%;
                 color: $color-black;
                 @include text-font(16px, 600, 16px, 0);
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                //white-space: nowrap;
+                overflow: hidden;
               }
               .news-description {
                 width: 100%;
@@ -140,11 +147,13 @@ body {
             .news-image {
               margin: 0 auto;
               width: auto; // 50%;
+              max-width: 50%;
               height: 100%;
               @include flex-vertical();
               img {
                 width: auto;
                 height: 100%;
+                object-fit: cover;
               }
             }
           }

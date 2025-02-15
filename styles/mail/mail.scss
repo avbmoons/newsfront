@@ -117,7 +117,7 @@ body {
             margin-left: 0;
             margin-top: 20px;
             margin-bottom: 20px;
-            width: $form-btn-width;
+            width: 1.5*$form-btn-width;
             height: $form-btn-height;
             @include text-font(2.4vh, 300, 2.4vh, 0);
             color: $color-white;
