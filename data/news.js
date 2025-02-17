@@ -1,5 +1,5 @@
 const news = [
-  {
+  {         
     id: 1,
     title: 'A strong earthquake has occurred off the coast of Tonga',
     description:
@@ -38,7 +38,7 @@ const news = [
     category_id: 'nature, culture',
     image: '../../assets/newsru/economy-image-1.png',
   },
-  {
+  {             
     id: 4,
     title: 'The EAEU has zeroed import duties on certain types of raw materials containing precious metals',
     description:
@@ -58,8 +58,8 @@ const news = [
       'The travel industry hopes that by the beginning of the next summer season, Vityaz-Aero Airline, which has had its operators certificates revoked by the Federal Air Transport Agency due to the helicopter crash, will be able to resume operations, as it will be difficult for the region to cope with the growing tourist flow without a carrier.\n\n"Given the natural conditions, Kamchatka is simply doomed to helicopter transportation. Obviously, an alternative is needed, but previous attempts to bring small aircraft to the peninsula have not been successful, and the current ones are being delayed. We really hope that by the beginning of the high season, all claims against Vityaz-Aero will be lifted, and the carrier will be operational again, in the context of changes and increased attention to pilot training.", - said Vadim Mamontov, Vice President of the Russian Union of Travel Industry, CEO of RussiaDiscovery.\n\nAccording to Irina Sedova, Director of Kamchatka Tourism and Chairman of the Kamchatka Tourism Industry Association, helicopter tours in the region are almost not in demand in winter, but tourists have been increasingly booking trips for next summer in advance in recent years, and there are reservations now.\n\n"In January, the issue of the air carrier and the required number of vessels will become more acute for all tour operators. On the other hand, there is a practice that we book a helicopter tour if tourists book it, for example, six months before the trip, but we charge the fee much closer to the departure date, since there is always some unpredictability with such excursions. This is due not so much to the airline as to the weather and other conditions. We hope that by the summer season the authorities will find a way out of the situation, because helicopter tours are one of the visiting cards of Kamchatka," Sedova said.\n\nAlexander Moroz, director of the Snow Valley mountain and sports base located near the Vilyuchinsky volcano, also believes that Kamchatka tourism will not have any special problems in winter, since the tourist flow is small.The Vityaz-Aero Mi-8T helicopter crashed on August 31 in the area of the Vachkazhets mountain range, near the village of Nikolaevka in the Yelizovsky district. There were 22 people on board, 19 of whom were tourists and guides. They all died. After investigating the causes of the accident, the carriers certificates for commercial air transportation, aviation operations, and the certificate of a general aviation operator were revoked.',
     author: 'interfax.ru',
     sstatus: 'draft',
-    created_at: '2024-10-18 14:37:18',
-    updated_at: '2024-10-18 14:37:18',
+    created_at: '2024-10-18 19:32:28',
+    updated_at: '2024-10-18 19:32:28',
     source_id: 'Interfax',
     category_id: 'economy',
     image: '../../assets/newsru/economy-image-3.png',
@@ -71,8 +71,8 @@ const news = [
       'A 17th-century cello made by Italian master Giovanni Batista Roggeri, a student of Amati, which was part of the State Collection of unique musical instruments in Russia, was returned to the country after being abducted almost 30 years ago, said Irina Volk, a representative of the Russian Interior Ministry.\n\nPONA noted that this was done "thanks to the coordinated work of police officers from several countries" and called it "a unique international operation.\n\n"The pinstool, which belonged to the Russian National Museum of Music, was stolen in 1995 from a musician to whom it was given for temporary use. In fact, a criminal case was opened on a particularly large theft, and the cello was entered into the Interpol database.\n\n"In 2018, the instrument was found put up for sale at an auction in France. It was withdrawn from the auction," said the Wolf.\n\n Later, the Russian police established that the cello had been transported to Italy. At the request of the Russian side, it was seized by Italian police and placed in storage at the cultural heritage protection unit of the Carabinieri of Florence. Recently, in Florence, the instrument was handed over to the staff of the National Security Service of Interpol of the Ministry of Internal Affairs of Russia.\n\n"After conducting an expert study of the cultural heritage object, the Italian side decided to return it to the Russian Federation," the representative of the department summed up.',
     author: 'interfax.ru',
     sstatus: 'draft',
-    created_at: '2024-10-18 18:00:35',
-    updated_at: '2024-10-18 18:00:35',
+    created_at: '2024-10-18 19:44:35',
+    updated_at: '2024-10-18 19:44:35',
     source_id: 'Interfax',
     category_id: 'culture',
     image: '../../assets/newsru/culture-image-1.png',
@@ -97,8 +97,8 @@ const news = [
       'Zenit Kazans volleyball players defeated Dynamo Moscow in the match of the eighth round of the PARI Super League of the Russian Championship. The meeting in Moscow ended with a score 3:1 (25:18, 25:19, 26:28, 25:14).\n\nWith his victory, Zenit regained the championship in the championship standings. Kazan athletes have won seven out of seven matches since the start of the season. Prior to that, the first place was occupied by the Belgorod team "Belogorye" with six wins and one loss. Dynamo ranks fourth in the ranking: the team has six wins and two losses.\n\nThe Super League of the Russian Championship runs from September 4, 2024 to May 12, 2025. 15 volleyball teams are participating in the competition. Zenit Kazan became the champion last year, Dynamo took second place, and Belogorya won the silver medal.',
     author: 'kommersant.ru',
     sstatus: 'draft',
-    created_at: '2024-10-20 21:40:57',
-    updated_at: '2024-10-20 21:40:57',
+    created_at: '2024-10-20 22:40:57',
+    updated_at: '2024-10-20 22:40:57',
     source_id: 'Kommersant',
     category_id: 'sport',
     image: '../../assets/newsru/sport-image-2.png',
@@ -110,8 +110,8 @@ const news = [
       'Russias first racket Daria Kasatkina won the final of the WTA-500 tennis tournament in Nihao, China. Her meeting with Russian tennis player Mirra Andreeva ended with a score. 6:0, 4:6, 6:4.\n\n Two Russian tennis players— Spaniard Paula Badosa and Czech Karolina Mukhova, withdrew from the semifinals due to injuries. After the final match of the tournament, Daria Kasatkina rose to ninth place in the WTA rankings and returned to the top 10 for the first time since July 2023. Mirra Andreeva rose from 19th place to 16th.\n\nFor 27-year-old Daria Kasatkina, winning the WTA Cup was her second WTA title in 2024 and the eighth of her career. Mira Andreeva is 17 years old, she won her first WTA title in 2024.',
     author: 'kommersant.ru',
     sstatus: 'draft',
-    created_at: '2024-10-20 15:19:22',
-    updated_at: '2024-10-20 15:19:22',
+    created_at: '2024-10-20 23:05:38',
+    updated_at: '2024-10-20 23:05:38',
     source_id: 'Kommersant',
     category_id: 'sport',
     image: '../../assets/newsru/sport-image-3.png',
@@ -142,7 +142,7 @@ const news = [
     category_id: 'science, culture',
     image: '../../assets/newsru/science-image-1.png',
   },
-  {
+  {       
     id: 12,
     title: 'Scientists talked about the benefits of cats for their owners',
     description:
@@ -172,7 +172,7 @@ const news = [
     id: 14,
     title: 'Figure patriarchy: how men became the main ones in women`s sports',
     description:
-      'The start of the Russian Grand Prix has shown that men`s singles is turning into the main form of figure skating in the country\n\nThe first stage of the Russian Grand Prix ended in Magnitogorsk on Sunday. He became another proof of the trend of the last couple of seasons in isolation — the main showmen in Russian figure skating were men`s singles. The girls who brought this sport to glossy magazines and Channel One are fading into the shadows. The main events of the first major tournament of the season are described in the Izvestia article.\n\nThe men`s competitions in Magnitogorsk were held with such density and nervousness that many international tournaments would envy. After the short program, the whole six were in several points: Roman Savosin, Nikolai Ugozhaev, Mark Kondratyuk, Egor Rukhin, Evgeny Semenenko and Ivan Popov. Popov and Rukhin are certainly not the leaders of the national team, so their appearance in the top was a pleasant surprise. But even more surprising is that Rukhin, who returned from oblivion after wandering through the schools of Tutberidze, Plushenko and others, did five fours in the free program! He almost fell off Rittberger, but landed.\n\nBut Mark Kondratyuk has become a real superman, who this season surprises with a choice of music — dubstep in the short program and Indian motifs in the free program (if only he could promote it on Indian YouTube, there would be billions of views). Mark not only performed his five fours almost flawlessly — the most difficult flip, lutz, sheepskin coat and two salchows, but also made a unique triple axel + triple axel sequence, set the audience on fire, and after the rental he also depicted a seal on the ice — that`s the name of his team in the virtual Champions League of figure skaters, which Channel One announced before The Grand Prix.\n\nThat`s why Kondratyuk was emotionally celebrating a successful rental, but he was lamenting and clutching his head when he saw that he had received 199.44 points instead of 200. But the amount of 289.54 would allow us to count on medals from international competitions. Only the bronze medalist of the Beijing team has yet to break through to them — he plays for CSKA.\n\nThe second place belongs to Roman Savosin, who wisely abandoned the new program for Sergei Rachmaninoff and returned last year`s hit under Adriano Celentano. The third is Evgeny Semenenko, and he is hardly happy with this result after his reinsurance and mistake on Salchow.',
+      'The start of the Russian Grand Prix has shown that men`s singles is turning into the main form of figure skating in the country.\n\nThe first stage of the Russian Grand Prix ended in Magnitogorsk on Sunday. He became another proof of the trend of the last couple of seasons in isolation — the main showmen in Russian figure skating were men`s singles. The girls who brought this sport to glossy magazines and Channel One are fading into the shadows. The main events of the first major tournament of the season are described in the Izvestia article.\n\nThe men`s competitions in Magnitogorsk were held with such density and nervousness that many international tournaments would envy. After the short program, the whole six were in several points: Roman Savosin, Nikolai Ugozhaev, Mark Kondratyuk, Egor Rukhin, Evgeny Semenenko and Ivan Popov. Popov and Rukhin are certainly not the leaders of the national team, so their appearance in the top was a pleasant surprise. But even more surprising is that Rukhin, who returned from oblivion after wandering through the schools of Tutberidze, Plushenko and others, did five fours in the free program! He almost fell off Rittberger, but landed.\n\nBut Mark Kondratyuk has become a real superman, who this season surprises with a choice of music — dubstep in the short program and Indian motifs in the free program (if only he could promote it on Indian YouTube, there would be billions of views). Mark not only performed his five fours almost flawlessly — the most difficult flip, lutz, sheepskin coat and two salchows, but also made a unique triple axel + triple axel sequence, set the audience on fire, and after the rental he also depicted a seal on the ice — that`s the name of his team in the virtual Champions League of figure skaters, which Channel One announced before The Grand Prix.\n\nThat`s why Kondratyuk was emotionally celebrating a successful rental, but he was lamenting and clutching his head when he saw that he had received 199.44 points instead of 200. But the amount of 289.54 would allow us to count on medals from international competitions. Only the bronze medalist of the Beijing team has yet to break through to them — he plays for CSKA.\n\nThe second place belongs to Roman Savosin, who wisely abandoned the new program for Sergei Rachmaninoff and returned last year`s hit under Adriano Celentano. The third is Evgeny Semenenko, and he is hardly happy with this result after his reinsurance and mistake on Salchow.',
     author: 'iz.ru',
     sstatus: 'draft',
     created_at: '2024-10-28 00:01:59',

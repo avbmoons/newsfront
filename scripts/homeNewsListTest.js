@@ -1,3 +1,14 @@
+let newsSort = news.sort(compare);
+
+function compare(a,b) {
+  let dateA = new Date(a.created_at);
+  let dateB = new Date(b.created_at);
+
+  return dateB - dateA;
+}
+//console.log(newsSort);
+
+
 class NewsItemMax {
   constructor(
     id,
